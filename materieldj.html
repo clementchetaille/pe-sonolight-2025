@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PE - Matériel DJ</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body class="nosproduits-page">
+    <div class="background--custom"></div>
+    <header>
+      <div class="logo">
+        <a href="index.html">
+          <img src="images/logo-pesonopetit.png" alt="Logo" class="logo-img" />
+        </a>
+      </div>
+      <nav class="main-nav">
+        <ul class="nav-list">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="nosproduits.html">Nos produits</a></li>
+          <li><a href="nosservices.html">Nos services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="materielsono-container"></section>
+
+    <!-- Barre de recherche et filtres en dessous du header -->
+    <div class="search-and-filters">
+      <!-- Barre de recherche -->
+      <input
+        type="text"
+        id="search-input"
+        placeholder="Rechercher un produit..."
+      />
+      <!-- Filtres par catégorie -->
+      <div id="filter-buttons">
+        <button data-categorie="All">Tous</button>
+        <button data-categorie="Accessoires">Accessoires</button>
+        <button data-categorie="accessoiresdj">Accessoires DJ</button>
+        <button data-categorie="casque">Casque</button>
+        <button data-categorie="consoledemixage">Console de mixage</button>
+        <button data-categorie="enceintes">Enceintes</button>
+        <button data-categorie="materieldj">Matériel DJ</button>
+        <button data-categorie="microphone">Microphone</button>
+        <button data-categorie="piedetsupport">Pied et support</button>
+        <button data-categorie="sonorisation">Sonorisation</button>
+        <button data-categorie="studio">Studio</button>
+        <button data-categorie="systemcolonne">Système Colonne</button>
+      </div>
+    </div>
+
+    <div class="products-section">
+      <div class="products-grid" id="products-container">
+        <!-- Les produits seront générés ici par JS -->
+      </div>
+    </div>
+
+    <script>
+      let produits = [];
+
+      const container = document.getElementById("products-container");
+      const searchInput = document.getElementById("search-input");
+      const filterButtons = document.querySelectorAll("#filter-buttons button");
+
+      // Récupérer le paramètre search depuis l'URL
+      const urlParams = new URLSearchParams(window.location.search);
+      const searchParam = urlParams.get("search");
+
+      // Fonction pour afficher les produits
+      function displayProducts(list) {
+        container.innerHTML = "";
+        if (list.length === 0) {
+          container.innerHTML = "<p>Aucun produit trouvé.</p>";
+          return;
+        }
+        list.forEach((produit) => {
+          const card = document.createElement("div");
+          card.classList.add("product-card");
+          card.innerHTML = `
+            <img src="${produit.image}" alt="${produit.nom}">
+            <h2>${produit.nom}</h2>
+            ${produit.tag ? `<span class="tag">${produit.tag}</span>` : ""}
+            <p>${produit.description}</p>
+          `;
+          container.appendChild(card);
+        });
+      }
+
+      // Récupération des produits depuis le JSON
+      fetch("materieldj.json")
+        .then((res) => res.json())
+        .then((data) => {
+          produits = data;
+
+          // Si un paramètre search est présent dans l'URL, filtrer dès le départ
+          if (searchParam) {
+            const filtered = produits.filter((p) =>
+              p.nom.toLowerCase().includes(searchParam.toLowerCase())
+            );
+            displayProducts(filtered);
+            searchInput.value = searchParam;
+          } else {
+            displayProducts(produits);
+          }
+        });
+
+      // Recherche en temps réel
+      searchInput.addEventListener("input", () => {
+        const searchValue = searchInput.value.toLowerCase();
+        const filtered = produits.filter((p) =>
+          p.nom.toLowerCase().includes(searchValue)
+        );
+        displayProducts(filtered);
+      });
+
+      // Gestion des filtres avec activation/désactivation
+      filterButtons.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const isActive = btn.classList.contains("active");
+          const cat = btn.dataset.categorie;
+
+          // On enlève l'état actif de tous les boutons
+          filterButtons.forEach((b) => b.classList.remove("active"));
+
+          if (isActive) {
+            // Si on reclique sur le même bouton → désactivation → tout afficher
+            displayProducts(produits);
+          } else {
+            // Sinon on active le bouton cliqué
+            btn.classList.add("active");
+
+            if (cat === "All") {
+              displayProducts(produits);
+            } else {
+              displayProducts(
+                produits.filter((p) =>
+                  Array.isArray(p.categorie)
+                    ? p.categorie.includes(cat)
+                    : p.categorie === cat
+                )
+              );
+            }
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
