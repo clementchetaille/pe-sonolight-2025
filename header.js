@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
       </div>
 
       <!-- Menu desktop -->
+      <section class="glassnav-cont">
       <nav class="main-nav">
         <ul class="nav-list">
           <li><a href="index.html">Accueil</a></li>
@@ -16,6 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
+      </section>
       <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
   <label for="openSidebarMenu" class="sidebarIconToggle">
     <div class="spinner diagonal part-1"></div>

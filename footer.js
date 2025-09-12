@@ -2,12 +2,6 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("footer").innerHTML = `
 <footer>
       <section class="footer-container">
-        <div class="footer-logo">
-          <img src="images/logo-pesonopetit.png" alt="Logo" class="logo-img" />
-          <p>
-            Votre spécialiste en équipement audio, DJ, lumière et home-studio
-            professionnel depuis 2008
-          </p>
         </div>
         <div class="footer-nosentites">
           <h2><u>Nos autres entités</u></h2>
@@ -38,20 +32,19 @@ document.addEventListener("DOMContentLoaded", () => {
           </p>
         </div>
         <div class="footer-apropos">
-          <h2><u>À propos</u></h2>
+          <h2><u>Liens utiles</u></h2>
           <p>
             <a href="apropos.html" class="couleur-lien"
-              >À propos de PE Sono Light</a
-            >
-          </p>
-          <p>
-            <a
-              href="https://www.prestige-effects.fr/"
+              >À propos de PE Sono Light</a>
+          </p>  
+          <p><a href="https://www.prestige-effects.fr/"
               class="couleur-lien"
               target="_blank"
-              >Prestige Effects</a
-            >
-          </p>
+              >Pass Culture</a></p>    
+          <p><a href="contact.html"
+              class="couleur-lien"
+              >Contacts</a></p>
+          
         </div>
       </section>
     </footer>

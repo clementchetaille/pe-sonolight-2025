@@ -28,8 +28,11 @@
       </nav>
     </header>
 
-    <section class="materielsono-container"></section>
-
+    <section class="pageproduits-container"></section>
+    <div class="text-presentation-produits">
+      <h1>Home Studio</h1>
+      <h2>Enregistrements · Production · Monitoring</h2>
+    </div>
     <!-- Barre de recherche et filtres en dessous du header -->
     <div class="search-and-filters">
       <!-- Barre de recherche -->
@@ -93,7 +96,7 @@
       }
 
       // Récupération des produits depuis le JSON
-      fetch("materieldj.json")
+      fetch("homestudio.json")
         .then((res) => res.json())
         .then((data) => {
           produits = data;
