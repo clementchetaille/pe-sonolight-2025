@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PE - Lumières</title>
+    <title>Materiel sonorisation</title>
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
@@ -12,27 +12,17 @@
   </head>
   <body class="nosproduits-page">
     <div class="background--custom"></div>
-    <header>
-      <div class="logo">
-        <a href="index.html">
-          <img src="images/logo-pesonopetit.png" alt="Logo" class="logo-img" />
-        </a>
-      </div>
-      <nav class="main-nav">
-        <ul class="nav-list">
-          <li><a href="index.html">Accueil</a></li>
-          <li><a href="nosproduits.html">Nos produits</a></li>
-          <li><a href="nosservices.html">Nos services</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
+
+    <!-- ===== HEADER ===== -->
+    <div id="header"></div>
+    <!-- ===== HEADER ===== -->
 
     <section class="pageproduits-container"></section>
     <div class="text-presentation-produits">
       <h1>Lumières</h1>
-      <h2>Éclairage scénique · DJ · Événementiel</h2>
+      <h2>Éclairage scénique · DJ · Évènementiel</h2>
     </div>
+
     <!-- Barre de recherche et filtres en dessous du header -->
     <div class="search-and-filters">
       <!-- Barre de recherche -->
@@ -64,6 +54,13 @@
       </div>
     </div>
 
+    <!-- ===== Bouton Scroll To Top ===== -->
+    <button id="scrollToTop"><i class="fas fa-arrow-up"></i></button>
+
+    <div id="footer"></div>
+
+    <script src="header.js"></script>
+    <script src="footer.js"></script>
     <script>
       let produits = [];
 
@@ -151,6 +148,19 @@
             }
           }
         });
+      });
+
+      // === Script du bouton Scroll To Top ===
+      const btnScroll = document.getElementById("scrollToTop");
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 200) {
+          btnScroll.style.display = "block";
+        } else {
+          btnScroll.style.display = "none";
+        }
+      });
+      btnScroll.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
       });
     </script>
   </body>

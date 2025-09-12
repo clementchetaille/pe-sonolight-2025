@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
     <header>
       <div class="logo">
         <a href="index.html">
-          <img src="images/logo-pesonopetit.png" alt="Logo" class="logo-img" />
+          <img src="images/logo-pe-sono.png" alt="Logo" class="logo-img" />
         </a>
       </div>
 
