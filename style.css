@@ -47,7 +47,7 @@ br {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: background 0.3s;
   animation: pulse 2s infinite;
-  z-index: 1000;
+  z-index: 5000;
 }
 
 #scrollToTop:hover {
@@ -379,10 +379,51 @@ input[type="checkbox"]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 .text-container h2 {
   font-size: clamp(40px, 10vw, 130px);
   margin: 0 0 0.5rem 0;
-  color: white;
   white-space: nowrap;
-  opacity: 0.6;
+  animation: lights 5s 750ms linear infinite;
 }
+@keyframes lights {
+  0% {
+    color: hsl(210, 40%, 80%);
+    text-shadow: 0 0 1em hsla(200, 90%, 60%, 0.2),
+      0 0 0.125em hsla(210, 100%, 25%, 0.3),
+      -1em -0.125em 0.5em hsla(180, 100%, 60%, 0),
+      1em 0.125em 0.5em hsla(220, 100%, 60%, 0);
+  }
+
+  30% {
+    color: hsl(210, 80%, 90%);
+    text-shadow: 0 0 1em hsla(200, 100%, 73%, 0.5),
+      0 0 0.125em hsla(210, 100%, 60%, 0.5),
+      -0.5em -0.125em 0.25em hsla(180, 80%, 30%, 0.2),
+      0.5em 0.125em 0.25em hsla(220, 100%, 60%, 0.4);
+  }
+
+  40% {
+    color: hsl(210, 100%, 95%);
+    text-shadow: 0 0 1em hsla(200, 100%, 80%, 0.5),
+      0 0 0.125em hsla(210, 100%, 90%, 0.5),
+      -0.25em -0.125em 0.125em hsla(180, 100%, 60%, 0.2),
+      0.25em 0.125em 0.125em hsla(220, 100%, 60%, 0.4);
+  }
+
+  70% {
+    color: hsl(210, 80%, 90%);
+    text-shadow: 0 0 1em hsla(200, 100%, 70%, 0.5),
+      0 0 0.125em hsla(210, 100%, 60%, 0.5),
+      0.5em -0.125em 0.25em hsla(180, 100%, 60%, 0.2),
+      -0.5em 0.125em 0.25em hsla(220, 100%, 60%, 0.4);
+  }
+
+  100% {
+    color: hsl(210, 40%, 80%);
+    text-shadow: 0 0 1em hsla(200, 100%, 50%, 0.2),
+      0 0 0.125em hsla(210, 100%, 60%, 0.3),
+      1em -0.125em 0.5em hsla(180, 100%, 60%, 0),
+      -1em 0.125em 0.5em hsla(220, 100%, 60%, 0);
+  }
+}
+
 .text-container p {
   font-size: clamp(1rem, 3vw, 1.4rem);
   margin: 20px 0 0 0;
@@ -657,6 +698,169 @@ input[type="checkbox"]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
   box-shadow: 1px 1px 2px 0 #fff, 2px 2px 2px #0001 inset,
     2px 2px 4px #0001 inset, 2px 2px 8px #0001 inset,
     0 0 32px 2px hsla(var(--hue), 50%, 50%, 0.5) inset;
+}
+/* =================================================================== */
+/* ===================== GRID INDEX CONTAINER ======================== */
+/* =================================================================== */
+.grid-index .img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.grid-index > div {
+  display: flex;
+  position: relative; /* permet d'ancrer le texte */
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 12px;
+}
+.grid-index > div > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 0.1rem;
+  border-radius: 2px;
+  background: linear-gradient(to top, #021f4c, #050c16);
+  /* Transition douce et naturelle */
+  transition: transform 0.9s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.grid-index > div .grid-text {
+  position: absolute;
+  top: 8px; /* marge depuis le haut */
+  left: 10px;
+  right: 10px;
+  color: #fff; /* texte blanc */
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8); /* lisibilité */
+  z-index: 2; /* au-dessus de l’image */
+  pointer-events: none; /* clics passent à travers */
+  padding: 1.5rem;
+}
+
+.grid-index {
+  display: grid;
+  grid-gap: 1.2rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-auto-rows: 200px;
+  grid-auto-flow: dense;
+  padding: 1rem 1.5rem;
+}
+
+.grid-index > div:hover > img {
+  transform: scale(1.1); /* zoom à 110% */
+}
+.grid-index .wide {
+  grid-column: span 2;
+}
+.grid-index .tall {
+  grid-row: span 2;
+}
+.grid-index .big {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+/* =================================================================== */
+/* ===================== INDEX SERVICE LOCATION ====================== */
+/* =================================================================== */
+.index-service-location {
+  display: grid; /* Active le mode CSS Grid */
+  grid-template-columns: repeat(2, auto);
+  background-color: rgba(18, 22, 30, 0.9);
+  justify-content: center; /* Centre toute la grille horizontalement */
+  justify-items: center; /* Centre le contenu à l’intérieur de chaque cellule */
+  align-items: center;
+  column-gap: 10rem; /* Espace horizontal entre les colonnes */
+  padding: 30px 60px; /* Espacement interne */
+  color: rgb(234, 234, 234); /* Texte en blanc */
+  height: 20rem; /* Hauteur flexible, s’adapte au contenu */
+  border-radius: 15px;
+  margin: 1.5rem 1.5rem;
+  overflow: hidden;
+}
+
+.index-location-img {
+  width: 25rem;
+  height: auto;
+}
+
+.text-index-container {
+  justify-content: left;
+  justify-items: left;
+}
+
+.index-feature-list {
+  list-style: none;
+  padding-left: 0;
+  column-count: 2; /* Divise la liste en 2 colonnes */
+  column-gap: 2rem; /* Espace entre les colonnes */
+}
+
+.index-feature-list li {
+  --icon: url(""); /* valeur par défaut */
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 10px;
+  line-height: 2rem;
+}
+
+.index-feature-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  background-image: var(--icon);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* Définir les icônes spécifiques pour chaque item */
+.index-feature-list li:nth-child(1) {
+  --icon: url("images/time-left.png");
+}
+.index-feature-list li:nth-child(2) {
+  --icon: url("pieces.png");
+}
+.index-feature-list li:nth-child(3) {
+  --icon: url("support.png");
+}
+.index-feature-list li:nth-child(4) {
+  --icon: url("delays.png");
+}
+/* =================================================================== */
+/* ===================== INDEX SERVICE SAV =========================== */
+/* =================================================================== */
+.index-service-sav {
+  display: grid; /* Active le mode CSS Grid */
+  grid-template-columns: repeat(2, auto);
+  background-color: rgba(0, 22, 67, 0.9);
+  justify-content: center; /* Centre toute la grille horizontalement */
+  justify-items: center; /* Centre le contenu à l’intérieur de chaque cellule */
+  align-items: center;
+  column-gap: 10rem; /* Espace horizontal entre les colonnes */
+  padding: 30px 60px; /* Espacement interne */
+  color: rgb(234, 234, 234); /* Texte en blanc */
+  height: 20rem; /* Hauteur flexible, s’adapte au contenu */
+  border-radius: 15px;
+  margin: 2.8rem 2.8rem;
+  overflow: hidden;
+}
+
+.index-sav-img {
+  width: 25rem;
+  height: auto;
+}
+
+.text-index-container {
+  justify-content: right;
+  justify-items: right;
 }
 
 /* =================================================================== */
@@ -1317,6 +1521,7 @@ body.nosproduits-page div#filter-buttons button.active:hover {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   will-change: transform;
   background: url("images/img-sonorisation.webp") center/cover no-repeat;
+  margin-bottom: 7rem;
 }
 
 .category-card:hover {
@@ -1400,54 +1605,262 @@ body.nosproduits-page .category-container {
 /* ======================= NOS SERVICES ============================== */
 /* =================================================================== */
 
-/* wrapper global de la page services */
-.nosservices-page-ct {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  margin-top: 6rem;
-}
-
-/* titre de la page */
-.text-presentation-nosservices {
-  font-size: 2.5rem;
-  margin-bottom: 40px;
-  text-align: center;
-  color: white;
-}
-
-/* container pour les 3 sections */
 .nosservices-container {
-  display: flex;
-  flex-direction: column; /* empile verticalement */
-  width: 100%;
-  align-items: center; /* centre horizontalement */
-  gap: 1px; /* espace entre les sections */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
 }
 
-/* sections individuelles */
-.service-location,
-.service-vente,
-.service-sav {
-  width: 100%; /* prend toute la largeur du container */
-  height: 35rem;
-  box-sizing: border-box; /* évite débordement à cause du padding */
+.nosservices-top {
+  margin-top: 6rem;
+  text-align: center;
+  margin-bottom: 3rem;
   color: white;
-  padding: 2rem 2rem;
 }
 
-/* couleurs différentes si besoin */
-.service-location {
-  background-color: #141b3e;
-}
-.service-vente {
-  background-color: #0a1443;
-}
-.service-sav {
-  background-color: #36415e;
+.nosservices-top h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
+.nosservices-top h2 {
+  font-size: 1.2rem;
+  font-weight: 300;
+  opacity: 0.9;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+  align-items: start; /* ← important */
+}
+
+.service-card {
+  background: rgba(207, 203, 203, 0.04);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* seulement la card */
+  overflow: hidden;
+  position: relative;
+}
+
+.service-card.location {
+  background: rgba(52, 138, 219, 0.4);
+}
+
+.service-card.service-card.vente {
+  background: rgba(0, 59, 142, 0.4);
+}
+
+.service-card.service-card.support {
+  background: rgba(5, 110, 208, 0.4);
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.service-card.active {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+  background: linear-gradient(135deg, #007bff 0%, #003881 100%);
+  color: white;
+}
+
+.service-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: cover;
+  background-position: center;
+  filter: blur(5px);
+  border-radius: 20px;
+  z-index: 0;
+  /* AUCUNE transition sur l'image */
+}
+
+.service-card.active::before {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+  background-size: cover;
+  background-position: center;
+}
+
+/* Assurer que le contenu reste au-dessus */
+.service-card.location .card-header {
+  position: relative;
+  z-index: 1;
+}
+
+.service-card .service-details {
+  position: relative;
+  z-index: 1;
+}
+
+.card-header {
+  padding: 2rem;
+  text-align: center;
+  position: relative;
+}
+
+.service-icon {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 1rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  transition: none;
+}
+
+/* Pour assurer la lisibilité du texte */
+.service-card.location .service-icon {
+  background: rgb(242, 242, 242);
+}
+
+.service-card.vente .service-icon {
+  background: rgb(242, 242, 242);
+}
+
+.service-card.support .service-icon {
+  background: rgb(242, 242, 242);
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+}
+
+.card-subtitle {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+.service-card.active .card-subtitle {
+  opacity: 0.9;
+}
+
+.card-arrow {
+  position: absolute;
+  right: 1.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  border-right: 2px solid #333;
+  border-bottom: 2px solid #333;
+  border-color: rgb(255, 255, 255);
+  transform: translateY(-50%) rotate(45deg);
+  transition: all 0.3s ease;
+}
+
+.service-card.active .card-arrow {
+  border-color: white;
+  transform: translateY(-50%) rotate(225deg);
+}
+.service-details {
+  background: white;
+  border-radius: 0 0 20px 20px;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.5s ease, padding 0.5s ease;
+  padding: 0 2rem;
+}
+
+.service-card.active .service-details {
+  max-height: 1000px; /* assez grand pour le contenu */
+  padding: 1rem 3rem;
+}
+
+.details-content {
+  margin-top: 1rem;
+  padding: auto 2rem;
+}
+
+.details-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+}
+
+.details-text {
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  color: #555;
+}
+
+.feature-list {
+  list-style: none;
+  color: #2c3e50;
+}
+
+.feature-list li {
+  padding: 0.5rem 0;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.feature-list li:before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #27ae60;
+  font-weight: bold;
+}
+
+.cta-button {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+}
+
+.cta-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+@media (max-width: 768px) {
+  .nosservices-container {
+    padding: 1rem;
+  }
+
+  .nosservices-top {
+    margin-top: 2rem;
+  }
+
+  .nosservices-top h1 {
+    font-size: 2rem;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card-header {
+    padding: 1.5rem;
+  }
+}
 /* =================================================================== */
 /* ======================= PAGE CONTACT ============================== */
 /* =================================================================== */
@@ -1665,6 +2078,10 @@ body.contact-page .contact-container {
     display: none;
   }
 
+  .glassnav-cont {
+    display: none;
+  }
+
   header {
     display: flex;
     align-items: center;
@@ -1780,6 +2197,10 @@ body.contact-page .contact-container {
     overflow-x: hidden;
   }
   .main-nav {
+    display: none;
+  }
+
+  .glassnav-cont {
     display: none;
   }
   header {

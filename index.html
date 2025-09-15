@@ -89,6 +89,38 @@
         </div>
       </div>
     </div>
+    <!-- ===== GRID INDEX CONTAINER ===== -->
+    <div class="grid-index">
+      <div>
+        <img src="images/produits/yamaha-MG16XU.png" alt="" />
+        <div class="grid-text">Tables de mixage</div>
+      </div>
+      <div class="tall">
+        <img src="images/produits/dap-core-beat.webp" alt="" />
+      </div>
+      <div class="wide">
+        <img src="images/produits/altea-415a-angle.webp" alt="" />
+      </div>
+      <div>
+        <img src="images/produits/hdjcx.webp" alt="" />
+      </div>
+      <div class="tall">
+        <img src="images/produits/gravitylts 01.webp" alt="" />
+      </div>
+      <div class="big">
+        <img src="images/produits/alto-busker.webp" alt="" />
+        <div class="grid-text">Enceintes amplifiées</div>
+      </div>
+      <div>
+        <img src="images/produits/dap-asc-202.png" alt="" />
+      </div>
+      <div>
+        <img src="images/produits/beyerdynamic-dt-900-pro-x-.png" alt="" />
+      </div>
+      <div>
+        <img src="images/produits/daily-4.png" alt="" />
+      </div>
+    </div>
     <!-- ===== CONTENEUR #2 ===== -->
     <div class="cont2">
       <div class="encoche">
@@ -105,10 +137,59 @@
         </p>
       </div>
     </div>
+
+    <!-- ===== CONTENEUR INDEX SERVICE LOCATION ===== -->
+    <div class="index-service-location">
+      <img
+        src="images/concert-img5.jpeg"
+        alt="Logo"
+        class="index-location-img"
+      />
+      <div class="text-index-container">
+        <h1>Location de Matériel Sono, DJ & Éclairage Professionnel</h1>
+        <ul class="index-feature-list">
+          <li class="icon-timeleft">Location courte ou longue durée</li>
+          <li class="icon-timeleft">Matériel vérifié et assuré</li>
+          <li class="icon-timeleft">Support technique actif</li>
+          <li class="icon-timeleft">Formation express</li>
+        </ul>
+      </div>
+    </div>
+    <!-- ===== CONTENEUR INDEX SERVICE SAV ===== -->
+    <div class="index-service-sav">
+      <div class="text-index-container">
+        <h1>Réparation & SAV – Matériel Sono, DJ & Home Studio</h1>
+        <ul class="index-feature-list">
+          <li class="icon-timeleft">Réparations expertes</li>
+          <li class="icon-timeleft">Remplacement de pièces</li>
+          <li class="icon-timeleft">Support réactif</li>
+          <li class="icon-timeleft">Délais optimisés</li>
+        </ul>
+      </div>
+      <img src="images/sav-img.jpeg" alt="Logo" class="index-sav-img" />
+    </div>
+
+    <!-- ===== CONTENEUR INDEX SERVICE LOCATION ===== -->
+    <!-- ===== Bouton Scroll To Top ===== -->
+    <button id="scrollToTop"><i class="fas fa-arrow-up"></i></button>
     <!-- ===== FOOTER ===== -->
     <div id="footer"></div>
     <!-- ===== SCRIPT JS ===== -->
     <script src="header.js"></script>
     <script src="footer.js"></script>
+    <script>
+      // === Script du bouton Scroll To Top ===
+      const btnScroll = document.getElementById("scrollToTop");
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 200) {
+          btnScroll.style.display = "block";
+        } else {
+          btnScroll.style.display = "none";
+        }
+      });
+      btnScroll.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+    </script>
   </body>
 </html>
