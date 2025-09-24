@@ -93,7 +93,7 @@ br {
       rgba(0, 0, 0, 0) 80%,
       rgba(0, 0, 0, 0.4) 100%
     ),
-    linear-gradient(45deg, #16295f, #0e3262, #003d87);
+    linear-gradient(45deg, #278cff, #4180d3, #003d87);
   background-size: 400% 400%;
   animation: gradientShift 10s ease infinite;
   position: fixed;
@@ -194,6 +194,7 @@ header .logo-img {
   max-height: 5.5rem;
   height: auto;
   width: auto;
+  filter: drop-shadow(0.5px 1px 1px rgba(0, 0, 0, 0.6));
 }
 
 /* =================================================================== */
@@ -1607,6 +1608,7 @@ body.nosproduits-page .category-container {
 
 .nosservices-container {
   max-width: 1200px;
+  height: 100vh;
   margin: 0 auto;
   padding: 2rem;
 }
@@ -1654,11 +1656,11 @@ body.nosproduits-page .category-container {
 }
 
 .service-card.service-card.vente {
-  background: rgba(0, 59, 142, 0.4);
+  background: rgba(52, 138, 219, 0.4);
 }
 
 .service-card.service-card.support {
-  background: rgba(5, 110, 208, 0.4);
+  background: rgba(52, 138, 219, 0.4);
 }
 
 .service-card:hover {
@@ -1860,6 +1862,17 @@ body.nosproduits-page .category-container {
   .card-header {
     padding: 1.5rem;
   }
+}
+
+body.nosservices-page {
+  min-height: 100vh; /* occupe toute la hauteur */
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+body.nosservices-page main {
+  flex: 1; /* pousse le footer en bas */
 }
 /* =================================================================== */
 /* ======================= PAGE CONTACT ============================== */
