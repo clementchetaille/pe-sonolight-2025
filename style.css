@@ -765,6 +765,22 @@ input[type="checkbox"]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
   grid-column: span 2;
   grid-row: span 2;
 }
+
+/* --- Adaptation mobile --- */
+@media (max-width: 768px) {
+  .grid-index {
+    display: grid;
+    grid-gap: 1.2rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-auto-rows: 100px;
+    grid-auto-flow: dense;
+    padding: 1rem 1.5rem;
+  }
+
+  .grid-index > div .grid-text {
+    font-size: 1rem;
+  }
+}
 /* =================================================================== */
 /* ===================== INDEX SERVICE LOCATION ====================== */
 /* =================================================================== */
@@ -835,6 +851,43 @@ input[type="checkbox"]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 .index-feature-list li:nth-child(4) {
   --icon: url("delays.png");
 }
+
+/* --- Adaptation mobile --- */
+@media (max-width: 768px) {
+  .index-service-location {
+    display: flex;
+    flex-direction: column; /* ✅ Image en haut, texte en dessous */
+    align-items: center; /* Centre horizontalement */
+    text-align: center; /* Centre le texte */
+    row-gap: 2rem;
+    padding: 20px;
+    height: auto;
+  }
+
+  .index-service-location h1 {
+    font-size: 1rem;
+  }
+
+  .index-location-img {
+    width: 80%; /* Image plus flexible */
+    max-width: 20rem;
+    height: auto;
+  }
+
+  .text-index-container {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .index-feature-list {
+    column-count: 1; /* Une seule colonne pour plus de lisibilité */
+  }
+
+  .index-feature-list li {
+    padding-left: 25px;
+    line-height: 1.8rem;
+  }
+}
 /* =================================================================== */
 /* ===================== INDEX SERVICE SAV =========================== */
 /* =================================================================== */
@@ -850,7 +903,7 @@ input[type="checkbox"]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
   color: rgb(234, 234, 234); /* Texte en blanc */
   height: 20rem; /* Hauteur flexible, s’adapte au contenu */
   border-radius: 15px;
-  margin: 2.8rem 2.8rem;
+  margin: 1.5rem 1.5rem;
   overflow: hidden;
 }
 
@@ -864,6 +917,41 @@ input[type="checkbox"]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
   justify-items: right;
 }
 
+/* --- Adaptation mobile --- */
+@media (max-width: 768px) {
+  .index-service-sav {
+    display: flex;
+    flex-direction: column; /* ✅ Image en haut, texte en dessous */
+    align-items: center; /* Centre horizontalement */
+    text-align: center; /* Centre le texte */
+    row-gap: 0rem;
+    padding: 20px;
+    height: auto;
+  }
+
+  .index-service-sav h1 {
+    font-size: 1rem;
+  }
+
+  .index-sav-img {
+    width: 80%; /* Image plus flexible */
+  }
+
+  .text-index-container {
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .index-feature-list {
+    column-count: 1; /* Une seule colonne pour plus de lisibilité */
+  }
+
+  .index-feature-list li {
+    padding-left: 25px;
+    line-height: 1.8rem;
+  }
+}
 /* =================================================================== */
 /* ===================== SECTION DÉFILANTE ========================== */
 /* =================================================================== */
@@ -1322,14 +1410,11 @@ body.contact-page .contact-container {
 /* Section produits pour la page nos produits */
 .nosproduits-page .products-section {
   padding-top: 30px; /* espace après filtres */
-  padding-left: 20px;
-  padding-right: 20px;
   box-sizing: border-box;
 }
 
 /* Section produits générale */
 .products-section {
-  padding: 40px 20px;
   display: flex;
   justify-content: center;
 }
@@ -1372,8 +1457,9 @@ body.contact-page .contact-container {
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 30px;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1200px; /* ✅ limite de largeur */
   margin: auto;
+  padding: 0rem 5rem;
 }
 
 /* Carte produit individuelle */
@@ -1522,7 +1608,7 @@ body.nosproduits-page div#filter-buttons button.active:hover {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   will-change: transform;
   background: url("images/img-sonorisation.webp") center/cover no-repeat;
-  margin-bottom: 7rem;
+  margin-bottom: 1rem;
 }
 
 .category-card:hover {
@@ -2305,43 +2391,67 @@ body.contact-page .contact-container {
     line-height: 60px;
   }
 
+  .pageproduits-container {
+    margin-top: 0.5rem;
+  }
   .products-grid {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
-    padding: 15px;
+    width: 100%;
+    max-width: 600px; /* limite la largeur */
+    margin: 0 auto; /* centre dans son parent */
+    padding: 0 1rem; /* garde une marge intérieure */
   }
 
   .product-card {
-    padding: 15px;
+    padding: 12px; /* moins de padding intérieur */
+    border-radius: 15px; /* coins légèrement moins ronds */
+    font-size: 0.9rem; /* réduit le texte */
+    transform: scale(0.95); /* rend la carte un peu plus compacte */
   }
 
   .product-card img {
-    height: 150px;
+    width: 100%;
+    height: 120px; /* plus petit visuel */
+    object-fit: cover;
+    border-radius: 10px;
   }
 
   .nosproduits-page .search-and-filters {
-    margin-top: 90px;
-    padding: 0 15px;
+    margin-top: 1rem;
+    padding: 0 2rem;
   }
 
   .nosproduits-page #search-input {
     max-width: 100%;
   }
+  .text-presentation-produits {
+    line-height: 0.8rem;
+  }
 
+  .text-presentation-produits h2 {
+    opacity: 70%;
+    line-height: 2rem;
+  }
+
+  .text-presentation-produits h1 {
+    line-height: 2.5rem;
+    margin-bottom: 1rem;
+  }
   .nosproduits-page #filter-buttons button {
-    padding: 10px 12px;
+    padding: 5px 5px;
     font-size: 0.85rem;
   }
   .category-container {
     grid-template-columns: 1fr 1fr;
-    gap: 30px;
     margin-top: 1.5rem;
     margin-bottom: 2rem;
   }
 
   .category-card {
     max-width: 100%;
-    height: 230px;
+    height: 10rem;
   }
 
   .category-card h2 {
