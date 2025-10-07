@@ -125,84 +125,45 @@
       </div>
     </div>
 
-    <!-- ===== CONTENEUR INDEX SERVICE LOCATION ===== -->
-    <section class="services-location">
-      <div class="services-container">
-        <div class="services-card">
-          <div class="services-image">
-            <img src="images/concert-img5.jpeg" alt="Services de location" />
-            <div class="image-overlay"></div>
-          </div>
-          <div class="services-content">
-            <h2>Location de matériel Sono, DJ & Éclairage professionnel</h2>
-            <p class="intro-text"></p>
-            <ul class="services-list">
-              <li>
-                <span class="icon">✓</span>
-                <span class="service-text"
-                  >Location courte ou longue durée</span
-                >
-              </li>
-              <li>
-                <span class="icon">✓</span>
-                <span class="service-text">Matériel vérifié et assuré</span>
-              </li>
-              <li>
-                <span class="icon">✓</span>
-                <span class="service-text">Support technique actif</span>
-              </li>
-              <li>
-                <span class="icon">✓</span>
-                <span class="service-text">Formation express</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
+    <!-- ===== CONTENEUR INDEX SERVICES ===== -->
+    <section class="index-services-container">
+      <h1>
+        Achetez ou Louez à Toulon – Stock disponible & large choix en magasin
+      </h1>
+      <section class="item-card-ctn">
+        <section class="item-card" id="item-location">
+          <ion-icon
+            name="document-text-outline"
+            class="icon-services"
+          ></ion-icon>
+          <h2>LOCATION</h2>
+          <p>
+            Louez votre Matériel DJ, Sono et Lumière pour Tous Vos Événements
+          </p>
+        </section>
+
+        <section class="item-card" id="item-autre">
+          <ion-icon name="star-outline" class="icon-services"></ion-icon>
+          <h2>VENTE</h2>
+          <p>Pourquoi Acheter chez PE Sono Light ?</p>
+        </section>
+
+        <section class="item-card" id="item-sav">
+          <ion-icon name="construct-outline" class="icon-services"></ion-icon>
+          <h2>SAV</h2>
+          <p>Réparation de Matériel DJ, Sono & Éclairage</p>
+        </section>
+      </section>
     </section>
-    <!-- ===== CONTENEUR INDEX SERVICE SAV ===== -->
-    <section class="services-location">
-      <div class="services-container">
-        <div class="services-card">
-          <div class="services-image">
-            <img src="images/sav-img.jpeg" alt="Services de location" />
-            <div class="image-overlay"></div>
-          </div>
-          <div class="services-content">
-            <h2>Réparation & SAV - Matériel sono, DJ & Home Studio</h2>
-            <p class="intro-text"></p>
-            <ul class="services-list">
-              <li>
-                <span class="icon">✓</span>
-                <span class="service-text"
-                  >Location courte ou longue durée</span
-                >
-              </li>
-              <li>
-                <span class="icon">✓</span>
-                <span class="service-text">Matériel vérifié et assuré</span>
-              </li>
-              <li>
-                <span class="icon">✓</span>
-                <span class="service-text">Support technique actif</span>
-              </li>
-              <li>
-                <span class="icon">✓</span>
-                <span class="service-text">Formation express</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
+
     <!-- ===== Bouton Scroll To Top ===== -->
     <button id="scrollToTop"><i class="fas fa-arrow-up"></i></button>
     <!-- ===== FOOTER ===== -->
     <div id="footer"></div>
     <!-- ===== SCRIPT JS ===== -->
     <script src="header.js"></script>
-    <script src="section-services-index.js"></script>
     <script src="footer.js"></script>
+    <script src="scrollrevealindex.js"></script>
     <script>
       // === Script du bouton Scroll To Top ===
       const btnScroll = document.getElementById("scrollToTop");
@@ -217,5 +178,13 @@
         window.scrollTo({ top: 0, behavior: "smooth" });
       });
     </script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
