@@ -1619,12 +1619,12 @@ body.nosproduits-page main {
   padding: 0 4rem;
 }
 .nosservices-container .title-footer-services {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 .nosservices-container .text-footer-services {
   font-size: 1.1rem;
   font-weight: 600;
-  opacity: 82%;
+  opacity: 85%;
   color: white;
   padding: 0 4rem;
 }
