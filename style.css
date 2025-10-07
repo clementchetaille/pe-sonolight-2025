@@ -1583,10 +1583,14 @@ body.nosproduits-page main {
 /* =================================================================== */
 
 .nosservices-container {
+  display: flex;
+  flex-direction: column;
   max-width: 1200px;
   height: 100vh;
   margin: 0 auto;
   padding: 2rem;
+  text-align: center;
+  gap: 1rem;
 }
 
 .nosservices-top {
@@ -1604,9 +1608,25 @@ body.nosproduits-page main {
 }
 
 .nosservices-top h2 {
-  font-size: 1.2rem;
-  font-weight: 300;
-  opacity: 0.9;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.nosservices-top h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  opacity: 82%;
+  padding: 0 4rem;
+}
+.nosservices-container .title-footer-services {
+  font-size: 2rem;
+}
+.nosservices-container .text-footer-services {
+  font-size: 1.1rem;
+  font-weight: 600;
+  opacity: 82%;
+  color: white;
+  padding: 0 4rem;
 }
 
 .services-grid {
