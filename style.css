@@ -1415,42 +1415,55 @@ body.nosproduits-page div#filter-buttons button.active:hover {
 /* =================================================================== */
 /* =================== PAGE CATÉGORIES PRODUITS ==================== */
 /* =================================================================== */
-
-/* =================================
-   LIENS ET INTERACTIONS
-
-
-/* Liens des cartes catégories - supprime le soulignement */
-.category-link {
-  text-decoration: none !important;
-  color: inherit;
-  display: block;
+.nosproduits-maincontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 158, 226, 0.5);
+  padding: 2rem 0;
+  margin-top: 1.2rem;
 }
 
-.category-link:hover,
-.category-link:focus,
-.category-link:active,
-.category-link:visited {
-  text-decoration: none !important;
-  color: inherit;
+.products-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.4rem;
+  flex-wrap: nowrap;
+  width: 100%;
+  max-width: 1200px; /* pour éviter qu’elle soit trop étirée */
+  overflow-x: hidden;
 }
 
-/* Assure que le bouton reste stylé correctement */
-.category-link .btn {
-  pointer-events: none; /* évite le double-clic */
+.icon-products {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: calc((100% / 8) - 1.4rem); /* ajustez pour tenir compte du gap */
+  min-width: 80px; /* évite que les icônes deviennent trop petites */
+  padding: 0.4rem;
+  text-align: center;
 }
 
-/* S'assure que tous les éléments dans la carte gardent leur couleur */
-.category-link h2,
-.category-link h3,
-.category-link p {
-  color: inherit;
+.logo-products {
+  width: 2.2rem;
+  height: 2.2rem; /* ajoutez une hauteur fixe */
+  object-fit: contain;
+  filter: invert(100%) brightness(100%); /* combinez les filtres sur une seule ligne */
 }
 
-/* ================================
-   LAYOUT ET CONTENEURS
-
-
+#text-icon {
+  font-size: 0.9rem;
+  color: white;
+  margin-top: 0.5rem;
+  line-height: 1.2;
+  height: 2.4rem; /* hauteur fixe pour 2 lignes */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
 
 /* Texte de présentation */
 .category-presentation {
@@ -1469,6 +1482,8 @@ body.nosproduits-page div#filter-buttons button.active:hover {
 
 .category-presentation h3 {
   color: white;
+  font-size: 1rem;
+  padding: 0 5rem;
 }
 
 /* Conteneur principal des catégories */
@@ -1483,101 +1498,13 @@ body.nosproduits-page div#filter-buttons button.active:hover {
   box-sizing: border-box;
 }
 
-/* Carte de catégorie */
-.category-card {
-  display: grid;
-  grid-template-columns: 1fr 1fr; /* image à gauche, texte à droite */
-  width: 100%;
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(20px);
-  border-radius: 12px;
-  border: 2px solid rgba(255, 255, 255, 0.2);
-  overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  box-sizing: border-box;
-  text-decoration: none;
-}
-
-/* Hover effect */
-.category-card:hover {
-  transform: translate3d(0, -2px, 0);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
-}
-
-/* Image de la carte */
-.category-card img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  border-radius: 12px 0 0 12px;
-}
-
-/* Texte de la carte */
-.category-card .category-text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 0.5rem;
-  color: white;
-  font-size: 0.85rem; /* un peu plus petit pour compacité */
-}
-
-/* Titres dans les cartes */
-.category-card h2 {
-  margin: 0;
-  font-size: 1.5rem; /* titre compact */
-  color: white;
-}
-
-body.nosproduits-page main {
-  flex: 1; /* pousse le footer en bas */
-}
-
-/* Responsive : mobile */
-@media (max-width: 768px) {
-  .category-container {
-    grid-template-columns: 1fr; /* une seule colonne */
-    gap: 0.8rem;
-  }
-
-  .category-card {
-    grid-template-columns: 1fr; /* image au-dessus du texte */
-  }
-
-  .category-card img {
-    border-radius: 12px 12px 0 0;
-    height: 100px; /* hauteur fixe pour mobile */
-  }
-
-  .category-card .category-text {
-    padding: 0.8rem;
-    font-size: 0.85rem;
-  }
-
-  .category-card h2 {
-    font-size: 1.3rem;
+/* 🌐 Sur tablettes et téléphones */
+@media (max-width: 1024px) {
+  .products-banner {
+    overflow-x: auto;
+    justify-content: flex-start;
   }
 }
-
-/* Responsive : tablette intermédiaire */
-@media (min-width: 769px) and (max-width: 1024px) {
-  .category-container {
-    grid-template-columns: repeat(2, 1fr); /* 2 colonnes */
-    gap: 0.8rem;
-  }
-
-  .category-card img {
-    height: 150px;
-  }
-
-  .category-card h2 {
-    font-size: 1.4rem;
-  }
-}
-
 /* =================================================================== */
 /* ======================= NOS SERVICES ============================== */
 /* =================================================================== */
@@ -1591,6 +1518,11 @@ body.nosproduits-page main {
   padding: 2rem;
   text-align: center;
   gap: 1rem;
+}
+
+.icon-services {
+  font-size: 4rem; /* taille de l'icône */
+  color: white; /* couleur de l'icône */
 }
 
 .nosservices-top {
