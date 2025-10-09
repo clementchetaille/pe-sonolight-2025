@@ -1,0 +1,44 @@
+[
+  {
+    "nom": "Pioneer HDJ-CX",
+    "image": "images/produits/hdjcx.webp",
+    "description": "Description courte du produit 1",
+    "categorie": ["accessoiresdj", "casque"],
+    "tag": "Best-seller"
+  },
+  {
+    "nom": "Pioneer HDJ-X5",
+    "image": "images/produits/hdjx5k.webp",
+    "description": "Description courte du produit 4",
+    "categorie": ["accessoiresdj", "casque"],
+    "tag": ""
+  },
+  {
+    "nom": "Beyerdynamic DT 990 PRO",
+    "image": "images/produits/beyerdynamic-dt-990-pro.png",
+    "description": "Description courte du produit 4",
+    "categorie": "casque",
+    "tag": ""
+  },
+  {
+    "nom": "Beyerdynamic DT 770 PRO",
+    "image": "images/produits/dt-770-pro-beyerdynamic.png",
+    "description": "Description courte du produit 4",
+    "categorie": "casque",
+    "tag": ""
+  },
+  {
+    "nom": "Beyerdynamic DT 900 PRO X",
+    "image": "images/produits/beyerdynamic-dt-900-pro-x-.png",
+    "description": "Description courte du produit 4",
+    "categorie": "casque",
+    "tag": ""
+  },
+  {
+    "nom": "Pioneer HDJ-X5BT",
+    "image": "images/produits/hdj-x5bt-k.webp",
+    "description": "Description courte du produit 4",
+    "categorie": ["accessoiresdj", "casque"],
+    "tag": ""
+  }
+]

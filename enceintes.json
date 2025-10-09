@@ -1,0 +1,73 @@
+[
+  {
+    "nom": "LD Systems ICOA 15 A",
+    "image": "images/produits/LDICOA15A.png",
+    "description": "Description courte du produit 4",
+    "categorie": "enceintes",
+    "tag": ""
+  },
+  {
+    "nom": "Audiophony Nova 10A",
+    "image": "images/produits/audiophonynova10A.webp",
+    "description": "Description courte du produit 4",
+    "categorie": "enceintes",
+    "tag": ""
+  },
+  {
+    "nom": "HK audio L7-112FA",
+    "image": "images/produits/hk-audio-l7112fa.png",
+    "description": "Description courte du produit 4",
+    "categorie": "enceintes",
+    "tag": ""
+  },
+  {
+    "nom": "dB Technologies B·Hype 10",
+    "image": "images/produits/db-technologies-b10.png",
+    "description": "Description courte du produit 4",
+    "categorie": "enceintes",
+    "tag": ""
+  },
+  {
+    "nom": "Yamaha DXR10 MK2",
+    "image": "images/produits/dxr10mkii.webp",
+    "description": "Description courte du produit 4",
+    "categorie": "enceintes",
+    "tag": ""
+  },
+  {
+    "nom": "DAS Altea 415A",
+    "image": "images/produits/altea-415a-angle.webp",
+    "description": "Description courte du produit 4",
+    "categorie": "enceintes",
+    "tag": ""
+  },
+  {
+    "nom": "dB Technologies B·Hype 8",
+    "image": "images/produits/db-technologies-hype8.png",
+    "description": "Description courte du produit 4",
+    "categorie": "enceintes",
+    "tag": ""
+  },
+  {
+    "nom": "DAS Altea 412A",
+    "image": "images/produits/das-altea-412A.webp",
+    "description": "Description courte du produit 4",
+    "categorie": "enceintes",
+    "tag": ""
+  },
+
+  {
+    "nom": "Alto Busker",
+    "image": "images/produits/alto-busker.webp",
+    "description": "Description courte du produit 4",
+    "categorie": "enceintes",
+    "tag": "batterie"
+  },
+  {
+    "nom": "Bose S1 Pro +",
+    "image": "images/produits/bose-S1-pro+.webp",
+    "description": "Description courte du produit 4",
+    "categorie": "enceintes",
+    "tag": "batterie"
+  }
+]

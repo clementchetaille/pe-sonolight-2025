@@ -31,6 +31,14 @@ br {
   margin-bottom: 10px; /* espace sous le <br> */
 }
 
+.lien {
+  text-decoration: none;
+}
+
+.lien:hover {
+  text-decoration: underline;
+}
+
 /* === Bouton Scroll To Top === */
 #scrollToTop {
   display: none;
@@ -1422,28 +1430,34 @@ body.nosproduits-page div#filter-buttons button.active:hover {
   background-color: rgba(0, 158, 226, 0.5);
   padding: 2rem 0;
   margin-top: 1.2rem;
+  height: 3.5rem;
 }
 
 .products-banner {
   display: flex;
+  justify-content: space-evenly; /* répartition égale de l'espace */
   justify-content: center;
   align-items: center;
-  gap: 1.4rem;
+  gap: 1rem;
   flex-wrap: nowrap;
   width: 100%;
   max-width: 1200px; /* pour éviter qu’elle soit trop étirée */
   overflow-x: hidden;
+  padding-top: 1rem;
 }
 
 .icon-products {
   display: flex;
   flex-direction: column;
+  flex: 1; /* chaque icône prend la même largeur */
+  max-width: 120px; /* limite la largeur maximale */
   align-items: center;
   justify-content: center;
   width: calc((100% / 8) - 1.4rem); /* ajustez pour tenir compte du gap */
   min-width: 80px; /* évite que les icônes deviennent trop petites */
   padding: 0.4rem;
   text-align: center;
+  cursor: pointer;
 }
 
 .logo-products {
@@ -1463,41 +1477,81 @@ body.nosproduits-page div#filter-buttons button.active:hover {
   align-items: center;
   justify-content: center;
   text-align: center;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
 }
 
-/* Texte de présentation */
-.category-presentation {
-  margin-top: 80px;
-  margin-bottom: -60px;
-  text-align: center;
-  padding: 0 20px;
+.icon-products-link {
+  text-decoration: none; /* enlève le soulignement */
+  color: inherit; /* garde la couleur du texte */
+  display: flex; /* pour que le lien prenne la forme du contenu */
+  transition: transform 0.2s ease, opacity 0.8s ease; /* animation au survol */
 }
 
-.category-presentation h1 {
-  font-size: 3rem;
-  font-weight: 700;
-  margin-bottom: 0.5rem;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+.icon-products-link:hover #text-icon {
+  color: #f1ab7d;
 }
 
-.category-presentation h3 {
-  color: white;
-  font-size: 1rem;
-  padding: 0 5rem;
-}
-
-/* Conteneur principal des catégories */
-.category-container {
+.section1-produits {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 colonnes par défaut */
-  gap: 1rem; /* petit espacement entre les cartes */
-  width: 100%;
-  max-width: 900px; /* limite la largeur globale */
-  margin: 2rem auto; /* centre le conteneur */
-  padding: 0 1rem;
-  box-sizing: border-box;
+  grid-template-columns: 1fr 1fr; /* deux colonnes égales pour le bas */
+  grid-template-rows: auto auto; /* une ligne pour le haut, une pour le bas */
+  height: 45rem;
+  justify-items: center;
+  align-content: center;
+  gap: 2rem;
+  padding: 2rem 0;
+  background-image: url("images/sparkle-background2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
+.bloc-top {
+  grid-column: 1 / -1; /* occupe toute la largeur (2 colonnes) */
+  justify-content: center;
+  text-align: center;
+}
+
+.titre-bloc-top {
+  margin-bottom: 1rem;
+}
+
+.bloc-bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column: 1 / -1;
+  padding: 2rem;
+  align-items: center;
+  align-content: center;
+  justify-content: center; /* pour centrer le contenu dans la grille */
+}
+
+.section1-produits h2 {
+  font-size: 2.5rem;
+  color: white;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.section1-produits a {
+  text-decoration: none !important;
+}
+
+.section1-produits a h3 {
+  font-size: 1.2rem;
+  font-weight: 100;
+  color: white;
+}
+
+.section1-produits img {
+  width: 35rem;
+  height: 25rem;
+  transition: transform 0.4s ease;
+  transform-style: preserve-3d;
+}
+
+.section1-produits img:hover {
+  transform: rotateY(10deg) rotateX(5deg) scale(1.05);
+}
 /* 🌐 Sur tablettes et téléphones */
 @media (max-width: 1024px) {
   .products-banner {

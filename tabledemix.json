@@ -1,0 +1,23 @@
+[
+  {
+    "nom": "Yamaha MG16XU",
+    "image": "images/produits/yamaha-MG16XU.png",
+    "description": "Description courte du produit 4",
+    "categorie": "consoledemixage",
+    "tag": ""
+  },
+  {
+    "nom": "DAP CORE Beat",
+    "image": "images/produits/dap-core-beat.webp",
+    "description": "Description courte du produit 4",
+    "categorie": "consoledemixage",
+    "tag": ""
+  },
+  {
+    "nom": "DAP ASC-202 – Convertisseur stéréo 2 voies",
+    "image": "images/produits/dap-asc-202.png",
+    "description": "Description courte du produit 4",
+    "categorie": "consoledemixage",
+    "tag": ""
+  }
+]
