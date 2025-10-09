@@ -1,0 +1,233 @@
+[
+  {
+    "nom": "Cameo HYDRABEAM 4000 RGBW",
+    "image": "images/produits/lumieres/cameo_hydrabeam_4000_rgbw.png",
+    "description": "Description courte du produit 4",
+    "categorie": ["lumieres", "barreled", "jeudelumiere"],
+    "tag": ""
+  },
+  {
+    "nom": "BeamZ LCB224",
+    "image": "images/produits/lumieres/beamz_lcb224.png",
+    "description": "Description courte du produit 4",
+    "categorie": ["lumieres", "barreled"],
+    "tag": ""
+  },
+  {
+    "nom": "BeamZ LCB183",
+    "image": "images/produits/lumieres/beamz_lcb183.png",
+    "description": "Description courte du produit 4",
+    "categorie": ["lumieres", "barreled"],
+    "tag": ""
+  },
+  {
+    "nom": "Chauvet COLORband PIX-M ILS",
+    "image": "images/produits/lumieres/chauvet_colorband_pix-m_ils.png",
+    "description": "Description courte du produit 4",
+    "categorie": ["lumieres", "barreled"],
+    "tag": ""
+  },
+  {
+    "nom": "Chauvet ILS Command",
+    "image": "images/produits/lumieres/chauvet_ils_command.png",
+    "description": "Description courte du produit 4",
+    "categorie": ["lumieres", "controleurlumiere"],
+    "tag": ""
+  },
+  {
+    "nom": "Chauvet Obsession",
+    "image": "images/produits/lumieres/chauvet_obession.png",
+    "description": "Description courte du produit 4",
+    "categorie": ["lumieres", "effetslumineux"],
+    "tag": ""
+  },
+  {
+    "nom": "BeamZ PS10W LED Pin Spot",
+    "image": "images/produits/lumieres/beamz_ps10w_led_pin_spot.png",
+    "description": "Description courte du produit 4",
+    "categorie": ["lumieres", "effetslumineux"],
+    "tag": ""
+  },
+  {
+    "nom": "ADJ UV COB Cannon – Projecteur LED UV",
+    "image": "images/produits/lumieres/adj_uv_cob_cannon-projecteur_led_uv.png",
+    "description": "Description courte du produit 4",
+    "categorie": ["lumieres", "effetslumineux"],
+    "tag": ""
+  },
+  {
+    "nom": "Cameo Thunder Wash 100 RGB",
+    "image": "images/produits/lumieres/cameo_thunder_wash_100_rgb.png",
+    "description": "Description courte du produit 4",
+    "categorie": ["lumieres", "effetslumineux", "jeudelumiere"],
+    "tag": ""
+  },
+  {
+    "nom": "Cameo THUNDER® WASH 600 RGB",
+    "image": "images/produits/lumieres/cameo_thunder_wash_600_rgb.png",
+    "description": "Description courte du produit 4",
+    "categorie": ["lumieres", "effetslumineux", "jeudelumiere"],
+    "tag": ""
+  },
+  {
+    "nom": "BeamZ JB90R",
+    "image": "images/produits/lumieres/beamz_jb90r.png",
+    "description": "Description courte du produit 4",
+    "categorie": ["lumieres", "effetslumineux", "jeudelumiere"],
+    "tag": ""
+  },
+  {
+    "nom": "BeamZ Showbar Free",
+    "image": "images/produits/lumieres/beamz_showbar_free.png",
+    "description": "Description courte du produit 4",
+    "categorie": ["lumieres", "effetslumineux", "jeudelumiere"],
+    "tag": ""
+  },
+  {
+    "nom": "Chauvet GigBAR Move ILS",
+    "image": "images/produits/lumieres/chauvet_gigbar_move_ils.png",
+    "description": "Description courte du produit 4",
+    "categorie": ["lumieres", "effetslumineux", "jeudelumiere"],
+    "tag": ""
+  },
+  {
+    "nom": "Chauvet Intimidator Beam Q60",
+    "image": "images/produits/lumieres/chauvet_intimidator_beam_q60.png",
+    "description": "Description courte du produit 4",
+    "categorie": ["lumieres", "lyre"],
+    "tag": ""
+  },
+  {
+    "nom": "Chauvet DJ Intimidator Beam 360X",
+    "image": "images/produits/lumieres/chauvet_dj_intimidator_beam_360x.png",
+    "description": "Description courte du produit 4",
+    "categorie": ["lumieres", "lyre"],
+    "tag": ""
+  },
+  {
+    "nom": "JB Systems CLUBWASH 2",
+    "image": "images/produits/lumieres/jb_systems_clubwash_2.png",
+    "description": "Description courte du produit 4",
+    "categorie": ["lumieres", "lyre"],
+    "tag": ""
+  },
+  {
+    "nom": "Chauvet Intimidator Spot 260X",
+    "image": "images/produits/lumieres/chauvet_intimidator_spot_260x.png",
+    "description": "Description courte du produit 4",
+    "categorie": ["lumieres", "lyre"],
+    "tag": ""
+  },
+  {
+    "nom": "Nicols WALKER WASH",
+    "image": "images/produits/lumieres/nicols_walker_wash.png",
+    "description": "Description courte du produit 4",
+    "categorie": ["lumieres", "lyre"],
+    "tag": ""
+  },
+  {
+    "nom": "Chauvet Intimidator Spot 360X",
+    "image": "images/produits/lumieres/chauvet_intimidator_spot_360x.png",
+    "description": "Description courte du produit 4",
+    "categorie": ["lumieres", "lyre"],
+    "tag": ""
+  },
+  {
+    "nom": "BeamZ Panther 80 LED",
+    "image": "images/produits/lumieres/beamz-panther-80led.png",
+    "description": "Description courte du produit 4",
+    "categorie": ["lumieres", "lyre"],
+    "tag": ""
+  },
+  {
+    "nom": "JB Systems CLUBSPOT",
+    "image": "images/produits/lumieres/jb_systems-clubspot.png",
+    "description": "Description courte du produit 4",
+    "categorie": ["lumieres", "lyre"],
+    "tag": ""
+  },
+  {
+    "nom": "JB Systems CLUBWASH MINI",
+    "image": "images/produits/lumieres/jb_systems_clubwash_mini.png",
+    "description": "Description courte du produit 4",
+    "categorie": ["lumieres", "lyre"],
+    "tag": ""
+  },
+  {
+    "nom": "ADJ 18P HEX",
+    "image": "images/produits/lumieres/adj_18p_hex.png",
+    "description": "Description courte du produit 4",
+    "categorie": ["lumieres", "parled"],
+    "tag": ""
+  },
+  {
+    "nom": "Cameo ZENIT® B60 B LSD",
+    "image": "images/produits/lumieres/cameo_zenit_b60_b_lsd.png",
+    "description": "Description courte du produit 4",
+    "categorie": ["lumieres", "parled"],
+    "tag": ""
+  },
+  {
+    "nom": "Algam Lighting PAR 410 QUAD",
+    "image": "images/produits/lumieres/algam_ligthing_par_410_quad.png",
+    "description": "Description courte du produit 4",
+    "categorie": ["lumieres", "parled"],
+    "tag": ""
+  },
+  {
+    "nom": "ADJ 12PX HEX",
+    "image": "images/produits/lumieres/adj_12px_hex.png",
+    "description": "Description courte du produit 4",
+    "categorie": ["lumieres", "parled"],
+    "tag": ""
+  },
+  {
+    "nom": "ADJ Encore LP7 IP",
+    "image": "images/produits/lumieres/adj_encore_lp7_ip.png",
+    "description": "Description courte du produit 4",
+    "categorie": ["lumieres", "parled"],
+    "tag": ""
+  },
+  {
+    "nom": "ADJ Dotz Par",
+    "image": "images/produits/lumieres/adj_dotz_par.png",
+    "description": "Description courte du produit 4",
+    "categorie": ["lumieres", "parled"],
+    "tag": ""
+  },
+  {
+    "nom": "Algam Lighting EVENTPAR",
+    "image": "images/produits/lumieres/algam_lighting_eventpar.png",
+    "description": "Description courte du produit 4",
+    "categorie": ["lumieres", "parled"],
+    "tag": ""
+  },
+  {
+    "nom": "ADJ Encore LP12 IP",
+    "image": "images/produits/lumieres/adj_encore_lp12_ip.png",
+    "description": "Description courte du produit 4",
+    "categorie": ["lumieres", "parled"],
+    "tag": ""
+  },
+  {
+    "nom": "ADJ Encore LP18 IP",
+    "image": "images/produits/lumieres/adj_encore_lp18_ip.png",
+    "description": "Description courte du produit 4",
+    "categorie": ["lumieres", "parled"],
+    "tag": ""
+  },
+  {
+    "nom": "ADJ 12P HEX IP",
+    "image": "images/produits/lumieres/adj_12p_hex_ip.png",
+    "description": "Description courte du produit 4",
+    "categorie": ["lumieres", "parled"],
+    "tag": ""
+  },
+  {
+    "nom": "ADJ PAR Z100 3k",
+    "image": "images/produits/lumieres/adj_par_z100_3k.png",
+    "description": "Description courte du produit 4",
+    "categorie": ["lumieres", "parled"],
+    "tag": ""
+  }
+]

@@ -3,56 +3,77 @@
     "nom": "LD Systems ICOA 15 A",
     "image": "images/produits/enceintes/LDICOA15A.png",
     "description": "Description courte du produit 4",
-    "categorie": "enceintes",
+    "categorie": ["enceintes", "enceintesamplifiees"],
     "tag": ""
   },
   {
     "nom": "Audiophony Nova 10A",
     "image": "images/produits/enceintes/audiophonynova10A.webp",
     "description": "Description courte du produit 4",
-    "categorie": "enceintes",
+    "categorie": ["enceintes", "enceintesamplifiees"],
     "tag": ""
   },
   {
     "nom": "HK audio L7-112FA",
     "image": "images/produits/enceintes/hk-audio-l7112fa.png",
     "description": "Description courte du produit 4",
-    "categorie": "enceintes",
+    "categorie": ["enceintes", "enceintesamplifiees"],
     "tag": ""
   },
   {
     "nom": "dB Technologies B·Hype 10",
     "image": "images/produits/enceintes/db-technologies-b10.png",
     "description": "Description courte du produit 4",
-    "categorie": "enceintes",
+    "categorie": ["enceintes", "enceintesamplifiees"],
     "tag": ""
   },
   {
     "nom": "Yamaha DXR10 MK2",
     "image": "images/produits/enceintes/dxr10mkii.webp",
     "description": "Description courte du produit 4",
-    "categorie": "enceintes",
+    "categorie": ["enceintes", "enceintesamplifiees"],
     "tag": ""
   },
   {
     "nom": "DAS Altea 415A",
     "image": "images/produits/enceintes/altea-415a-angle.webp",
     "description": "Description courte du produit 4",
-    "categorie": "enceintes",
+    "categorie": ["enceintes", "enceintesamplifiees"],
     "tag": ""
   },
   {
     "nom": "dB Technologies B·Hype 8",
     "image": "images/produits/enceintes/db-technologies-hype8.png",
     "description": "Description courte du produit 4",
-    "categorie": "enceintes",
+    "categorie": ["enceintes", "enceintesamplifiees"],
     "tag": ""
   },
   {
     "nom": "DAS Altea 412A",
     "image": "images/produits/enceintes/das-altea-412A.webp",
     "description": "Description courte du produit 4",
-    "categorie": "enceintes",
+    "categorie": ["enceintes", "enceintesamplifiees"],
+    "tag": ""
+  },
+  {
+    "nom": "DAS Altea 718A",
+    "image": "images/produits/enceintes/das_altea_718a.webp",
+    "description": "Description courte du produit 4",
+    "categorie": ["enceintes", "enceintesamplifiees", "sub"],
+    "tag": ""
+  },
+  {
+    "nom": "LD Systems ICOA 12A",
+    "image": "images/produits/enceintes/ld_systems_icoa_12a.png",
+    "description": "Description courte du produit 4",
+    "categorie": ["enceintes", "enceintesamplifiees"],
+    "tag": ""
+  },
+  {
+    "nom": "LD Systems ICOA SUB 15 A",
+    "image": "images/produits/enceintes/ld_systems_icoa_sub_15_a.png",
+    "description": "Description courte du produit 4",
+    "categorie": ["enceintes", "enceintesamplifiees", "sub"],
     "tag": ""
   },
 
@@ -60,77 +81,119 @@
     "nom": "Alto Busker",
     "image": "images/produits/enceintes/alto-busker.webp",
     "description": "Description courte du produit 4",
-    "categorie": "enceintessurbatterie",
+    "categorie": ["enceintes", "enceintesamplifiees", "enceintessurbatterie"],
     "tag": "batterie"
   },
   {
     "nom": "Bose S1 Pro +",
     "image": "images/produits/enceintes/bose-S1-pro+.webp",
     "description": "Description courte du produit 4",
-    "categorie": "enceintessurbatterie",
+    "categorie": ["enceintes", "enceintessurbatterie"],
     "tag": "batterie"
   },
   {
     "nom": "Kali Audio In 5",
     "image": "images/produits/enceintes/kalo_audio_in_5.png",
     "description": "Description courte du produit 4",
-    "categorie": "enceintesdemonitoring",
+    "categorie": ["enceintes", "enceintesdemonitoring"],
     "tag": ""
   },
   {
     "nom": "M-Audio Forty Sixty",
     "image": "images/produits/enceintes/m-audio_forty_sixty.png",
     "description": "Description courte du produit 4",
-    "categorie": "enceintesdemonitoring",
+    "categorie": ["enceintes", "enceintesdemonitoring"],
     "tag": ""
   },
   {
     "nom": "Focal Shape 65",
     "image": "images/produits/enceintes/focal_shape_65.webp",
     "description": "Description courte du produit 4",
-    "categorie": "enceintesdemonitoring",
+    "categorie": ["enceintes", "enceintesdemonitoring"],
     "tag": ""
   },
   {
     "nom": "Kali Audio IN-8 v2",
     "image": "images/produits/enceintes/kali_audio_in-8_v2.png",
     "description": "Description courte du produit 4",
-    "categorie": "enceintesdemonitoring",
+    "categorie": ["enceintes", "enceintesdemonitoring"],
     "tag": ""
   },
   {
     "nom": "Focal Alpha 50 EVO",
     "image": "images/produits/enceintes/focal_alpha_50_evo.png",
     "description": "Description courte du produit 4",
-    "categorie": "enceintesdemonitoring",
+    "categorie": ["enceintes", "enceintesdemonitoring"],
     "tag": ""
   },
   {
     "nom": "Focal Alpha 65 EVO",
     "image": "images/produits/enceintes/focal_alpha_65_evo.webp",
     "description": "Description courte du produit 4",
-    "categorie": "enceintesdemonitoring",
+    "categorie": ["enceintes", "enceintesdemonitoring"],
     "tag": ""
   },
   {
     "nom": "Focal Alpha 80 EVO",
     "image": "images/produits/enceintes/focal_alpha_80_evo.webp",
     "description": "Description courte du produit 4",
-    "categorie": "enceintesdemonitoring",
+    "categorie": ["enceintes", "enceintesdemonitoring"],
     "tag": ""
   },
   {
     "nom": "Focal Alpha Twin EVO",
     "image": "images/produits/enceintes/focal_alpha_twin_evo.webp",
     "description": "Description courte du produit 4",
-    "categorie": "enceintesdemonitoring",
+    "categorie": ["enceintes", "enceintesdemonitoring"],
     "tag": ""
   },
   {
     "nom": "M-Audio BX8 D3",
     "image": "images/produits/enceintes/m-audio_bx8_d3.png",
     "description": "Description courte du produit 4",
-    "categorie": "enceintesdemonitoring",
+    "categorie": ["enceintes", "enceintesdemonitoring"],
+    "tag": ""
+  },
+  {
+    "nom": "Bose L1 Pro 8",
+    "image": "images/produits/enceintes/bose_l1_pro_8.webp",
+    "description": "Description courte du produit 4",
+    "categorie": ["enceintes", "systemecolonne"],
+    "tag": ""
+  },
+  {
+    "nom": "Audiophony Mojo 2000 Live",
+    "image": "images/produits/enceintes/audiophony_mojo_2000_live.webp",
+    "description": "Description courte du produit 4",
+    "categorie": ["enceintes", "systemecolonne"],
+    "tag": ""
+  },
+  {
+    "nom": "Bose L1 Pro 32",
+    "image": "images/produits/enceintes/bose_l1_pro_32.webp",
+    "description": "Description courte du produit 4",
+    "categorie": ["enceintes", "systemecolonne"],
+    "tag": ""
+  },
+  {
+    "nom": "Yamaha STAGEPAS 1K mkII",
+    "image": "images/produits/enceintes/yamaha_stagepas_1k_mkii.png",
+    "description": "Description courte du produit 4",
+    "categorie": ["enceintes", "systemecolonne"],
+    "tag": ""
+  },
+  {
+    "nom": "Bose L1 Pro 16",
+    "image": "images/produits/enceintes/bose_l1_pro_16.webp",
+    "description": "Description courte du produit 4",
+    "categorie": ["enceintes", "systemecolonne"],
+    "tag": ""
+  },
+  {
+    "nom": "LD Systems MAUI 28 G3",
+    "image": "images/produits/enceintes/ld_systems_maui_28_g3.png",
+    "description": "Description courte du produit 4",
+    "categorie": ["enceintes", "systemecolonne"],
     "tag": ""
   }
 ]
