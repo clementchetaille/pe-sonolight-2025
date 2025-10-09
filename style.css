@@ -1549,8 +1549,65 @@ body.nosproduits-page div#filter-buttons button.active:hover {
   transform-style: preserve-3d;
 }
 
-.section1-produits img:hover {
+.section1-produits img:hover,
+.section2-produits img:hover {
   transform: rotateY(10deg) rotateX(5deg) scale(1.05);
+}
+
+.section1-produits img,
+.section2-produits img {
+  transition: transform 0.4s ease;
+  transform-style: preserve-3d;
+}
+
+.section2-produits {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding: 2rem;
+  min-height: 40rem; /* hauteur minimale au lieu de fixe */
+}
+
+.bloc-left,
+.bloc-right {
+  display: flex;
+  flex-direction: column; /* empile h3 et img */
+  align-items: center; /* centre horizontalement */
+  width: 100%;
+  padding: 2rem;
+  box-sizing: border-box; /* inclut le padding dans la largeur */
+  text-align: center;
+}
+
+.bloc-left {
+  background-color: rgb(0, 44, 83);
+}
+
+.bloc-right {
+  background-color: rgb(0, 29, 53);
+}
+
+.bloc-left h3,
+.bloc-right h3 {
+  color: white;
+  margin: 0 0 2rem 0; /* espace sous le titre */
+  font-size: 1.5rem;
+}
+
+.bloc-left p,
+.bloc-right p {
+  color: white;
+  font-weight: 600;
+  padding: 0 5rem;
+}
+
+.bloc-left img,
+.bloc-right img {
+  max-width: 90%;
+  max-height: 30rem; /* limite la hauteur de l'image */
+  width: auto;
+  height: auto;
+  object-fit: contain;
 }
 /* 🌐 Sur tablettes et téléphones */
 @media (max-width: 1024px) {

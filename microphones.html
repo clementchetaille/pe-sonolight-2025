@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Materiel sonorisation</title>
+    <title>PE - Nos produits</title>
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
@@ -12,12 +12,14 @@
   </head>
   <body class="nosproduits-page">
     <div class="background--custom"></div>
-
     <!-- ===== HEADER ===== -->
     <div id="header"></div>
-    <!-- ===== HEADER ===== -->
-
+    <section class="nosproduits-maincontainer">
+      <!-- ===== PRODUCTS BANNER ===== -->
+      <div id="products-banner"></div>
+    </section>
     <section class="pageproduits-container"></section>
+
     <div class="text-presentation-produits">
       <h1>MICROPHONES</h1>
       <h2>Enceintes · Mixage · Accessoires DJ</h2>
@@ -48,9 +50,19 @@
     <button id="scrollToTop"><i class="fas fa-arrow-up"></i></button>
 
     <div id="footer"></div>
-
+    <!-- ===== SCRIPT JS ===== -->
+    <script src="script.js"></script>
     <script src="header.js"></script>
+    <script src="products-banner.js"></script>
     <script src="footer.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
     <script>
       let produits = [];
 
@@ -153,5 +165,6 @@
         window.scrollTo({ top: 0, behavior: "smooth" });
       });
     </script>
+    <!-- <script src="footer.js"></script> -->
   </body>
 </html>
