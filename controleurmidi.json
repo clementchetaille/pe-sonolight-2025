@@ -1,0 +1,30 @@
+[
+  {
+    "nom": "M-Audio Keystation Mini 32 MK3",
+    "image": "images/produits/controleurmidi/m-audio_keystation_mini_32_mk3.png",
+    "description": "Description courte du produit 4",
+    "categorie": "controleurmidi",
+    "tag": ""
+  },
+  {
+    "nom": "M-Audio Oxygen Pro Mini",
+    "image": "images/produits/controleurmidi/m-audio_oxygen_pro_mini.webp",
+    "description": "Description courte du produit 4",
+    "categorie": "controleurmidi",
+    "tag": ""
+  },
+  {
+    "nom": "M-Audio Oxygen 25 MKV",
+    "image": "images/produits/controleurmidi/m-audio_oxygen_25_mkv.webp",
+    "description": "Description courte du produit 4",
+    "categorie": "controleurmidi",
+    "tag": ""
+  },
+  {
+    "nom": "M-Audio Oxygen Pro 49",
+    "image": "images/produits/controleurmidi/m-audio_oxygen_pro_49.webp",
+    "description": "Description courte du produit 4",
+    "categorie": "controleurmidi",
+    "tag": ""
+  }
+]

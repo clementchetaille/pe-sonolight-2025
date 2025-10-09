@@ -1,0 +1,79 @@
+[
+  {
+    "nom": "Shure 565SD",
+    "image": "images/produits/microphones/Shure-565SD-front.png",
+    "description": "Description courte du produit 4",
+    "categorie": "microphones",
+    "tag": ""
+  },
+  {
+    "nom": "Shure MV7",
+    "image": "images/produits/microphones/Shure-MV7.png",
+    "description": "Description courte du produit 4",
+    "categorie": "microphones",
+    "tag": ""
+  },
+  {
+    "nom": "Shure MV7X",
+    "image": "images/produits/microphones/Shure-MV7X-side.png",
+    "description": "Description courte du produit 4",
+    "categorie": "microphones",
+    "tag": ""
+  },
+  {
+    "nom": "Shure PGA52",
+    "image": "images/produits/microphones/Shure-PGA52-side.avif",
+    "description": "Description courte du produit 4",
+    "categorie": "microphones",
+    "tag": ""
+  },
+  {
+    "nom": "Shure PGA58",
+    "image": "images/produits/microphones/Shure-PGA58-front.avif",
+    "description": "Description courte du produit 4",
+    "categorie": "microphones",
+    "tag": ""
+  },
+  {
+    "nom": "Shure PGA DRUMKIT4",
+    "image": "images/produits/microphones/shure-PGADRUMKIT4.avif",
+    "description": "Description courte du produit 4",
+    "categorie": "microphones",
+    "tag": ""
+  },
+  {
+    "nom": "Shure SM57",
+    "image": "images/produits/microphones/shure-sm57.png",
+    "description": "Description courte du produit 4",
+    "categorie": "microphones",
+    "tag": ""
+  },
+  {
+    "nom": "Shure SM58",
+    "image": "images/produits/microphones/shure-SM58.png",
+    "description": "Description courte du produit 4",
+    "categorie": "microphones",
+    "tag": ""
+  },
+  {
+    "nom": "Shure SM81",
+    "image": "images/produits/microphones/shure-SM81.png",
+    "description": "Description courte du produit 4",
+    "categorie": "microphones",
+    "tag": ""
+  },
+  {
+    "nom": "Shure Super 55",
+    "image": "images/produits/microphones/Shure-Super-55-side.webp",
+    "description": "Description courte du produit 4",
+    "categorie": "microphones",
+    "tag": ""
+  },
+  {
+    "nom": "Shure SV200A",
+    "image": "images/produits/microphones/shure-sv200a.png",
+    "description": "Description courte du produit 4",
+    "categorie": "microphones",
+    "tag": ""
+  }
+]

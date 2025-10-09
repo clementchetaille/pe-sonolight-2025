@@ -1,23 +1,171 @@
 [
   {
-    "nom": "Showgear Daily Case 4",
-    "image": "images/produits/daily-4.png",
+    "nom": "AlphaTheta DDJ RV6",
+    "image": "images/produits/materieldj/alphaTheta-DDJ-GRV6.webp",
     "description": "Description courte du produit 2",
-    "categorie": "accessoiresdj",
-    "tag": "Eligible Pass Culture"
+    "categorie": "controleurdj",
+    "tag": ""
+  },
+  {
+    "nom": "AlphaTheta XDJ AZ",
+    "image": "images/produits/materieldj/alphaTheta-XDJ-AZ.webp",
+    "description": "Description courte du produit 2",
+    "categorie": "controleurdj",
+    "tag": ""
+  },
+  {
+    "nom": "AlphaTheta Omnis-Duo",
+    "image": "images/produits/materieldj/OMNIS-DUO-CGI-top.webp",
+    "description": "Description courte du produit 2",
+    "categorie": "controleurdj",
+    "tag": ""
+  },
+  {
+    "nom": "Pioneer OPUS QUAD",
+    "image": "images/produits/materieldj/pioneer-OPUS-QUAD.webp",
+    "description": "Description courte du produit 2",
+    "categorie": "controleurdj",
+    "tag": ""
+  },
+  {
+    "nom": "Pioneer XDJ-RR",
+    "image": "images/produits/materieldj/pioneer-xdj-rr.webp",
+    "description": "Description courte du produit 2",
+    "categorie": "controleurdj",
+    "tag": ""
+  },
+  {
+    "nom": "Pioneer XDJ-RX3",
+    "image": "images/produits/materieldj/XDJ-RX3_prm_top.webp",
+    "description": "Description courte du produit 2",
+    "categorie": "controleurdj",
+    "tag": ""
+  },
+  {
+    "nom": "Pioneer DDJ-FLX4",
+    "image": "images/produits/materieldj/pioneer_ddj_flx4.webp",
+    "description": "Description courte du produit 2",
+    "categorie": "controleurdj",
+    "tag": ""
+  },
+  {
+    "nom": "Pioneer DDJ-FLX10",
+    "image": "images/produits/materieldj/pioneer_ddj_flx10.webp",
+    "description": "Description courte du produit 2",
+    "categorie": "controleurdj",
+    "tag": ""
+  },
+  {
+    "nom": "Pioneer DDJ-REV1",
+    "image": "images/produits/materieldj/pioneer-ddj-rev1.webp",
+    "description": "Description courte du produit 2",
+    "categorie": "controleurdj",
+    "tag": ""
+  },
+  {
+    "nom": "Pioneer DDJ-REV5",
+    "image": "images/produits/materieldj/pioneer-ddj-rev5.webp",
+    "description": "Description courte du produit 2",
+    "categorie": "controleurdj",
+    "tag": ""
+  },
+  {
+    "nom": "Pioneer DDJ-REV7",
+    "image": "images/produits/materieldj/ddj-rev7_prm_top.webp",
+    "description": "Description courte du produit 2",
+    "categorie": "controleurdj",
+    "tag": ""
   },
 
   {
-    "nom": "Showgear Daily Case 7",
-    "image": "images/produits/dailycase7.png",
-    "description": "Description courte du produit 3",
-    "categorie": "accessoiresdj",
-    "tag": "Best-seller"
+    "nom": "Pioneer CDJ 3000",
+    "image": "images/produits/materieldj/CDJ-3000-angle-hero.png",
+    "description": "Description courte du produit 2",
+    "categorie": "lecteurdjplatinevinyle",
+    "tag": ""
+  },
+  {
+    "nom": "DAP CORE BEAT",
+    "image": "images/produits/materieldj/dap_core_beat.webp",
+    "description": "Description courte du produit 2",
+    "categorie": "consoledemixage",
+    "tag": ""
+  },
+  {
+    "nom": "Pioneer DJM-V10",
+    "image": "images/produits/materieldj/djm-v10-frontangle.webp",
+    "description": "Description courte du produit 2",
+    "categorie": "consoledemixage",
+    "tag": ""
+  },
+
+  {
+    "nom": "Pioneer DJM-750MK2",
+    "image": "images/produits/materieldj/DJM-750MK2-top-nnn.webp",
+    "description": "Description courte du produit 2",
+    "categorie": "consoledemixage",
+    "tag": ""
+  },
+  {
+    "nom": "Pioneer DJM-S11",
+    "image": "images/produits/materieldj/pioneer-DJM-S11.webp",
+    "description": "Description courte du produit 2",
+    "categorie": "consoledemixage",
+    "tag": ""
+  },
+  {
+    "nom": "Pioneer PLX-1000",
+    "image": "images/produits/materieldj/pioneer-plx-1000-angle.webp",
+    "description": "Description courte du produit 2",
+    "categorie": "lecteurdjplatinevinyle",
+    "tag": ""
+  },
+  {
+    "nom": "Pioneer XDJ-700",
+    "image": "images/produits/materieldj/pioneer-xdj-700.webp",
+    "description": "Description courte du produit 2",
+    "categorie": "lecteurdjplatinevinyle",
+    "tag": ""
   },
   {
     "nom": "Gravity LTS 01 B SET 1",
-    "image": "images/produits/gravitylts 01.webp",
-    "description": "Description courte du produit 4",
+    "image": "images/produits/materieldj/gravitylts 01.webp",
+    "description": "Description courte du produit 2",
+    "categorie": "piedetsupport",
+    "tag": ""
+  },
+  {
+    "nom": "MWM Phase Essential",
+    "image": "images/produits/materieldj/mwm-phase-essential.webp",
+    "description": "Description courte du produit 2",
+    "categorie": "systemetoutenun",
+    "tag": ""
+  },
+  {
+    "nom": "Numark CC1",
+    "image": "images/produits/materieldj/numark_cc1.webp",
+    "description": "Description courte du produit 2",
+    "categorie": "accessoiresdj",
+    "tag": ""
+  },
+  {
+    "nom": "Numark CS1",
+    "image": "images/produits/materieldj/numark_cs1.webp",
+    "description": "Description courte du produit 2",
+    "categorie": "accessoiresdj",
+    "tag": ""
+  },
+  {
+    "nom": "Showgear Daily Case 4",
+    "image": "images/produits/materieldj/showgear_daily_case_4.png",
+    "description": "Description courte du produit 2",
+    "categorie": "accessoiresdj",
+    "tag": ""
+  },
+  {
+    "nom": "Showgear Daily Case 7",
+    "image": "images/produits/materieldj/showgear_daily_case_7.png",
+    "description": "Description courte du produit 2",
     "categorie": "accessoiresdj",
     "tag": ""
   }

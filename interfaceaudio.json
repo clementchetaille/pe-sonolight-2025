@@ -1,0 +1,24 @@
+[
+  {
+    "nom": "Focusrite Scarlett 2i2 G3",
+    "image": "images/produits/interfaceaudio/Scarlett_2i2_g3.webp",
+    "description": "Description courte du produit 2",
+    "categorie": "interfaceaudio",
+    "tag": ""
+  },
+  {
+    "nom": "Focusrite Scarlett Solo G4",
+    "image": "images/produits/interfaceaudio/Scarlett-Solo-g4.webp",
+    "description": "Description courte du produit 2",
+    "categorie": "interfaceaudio",
+    "tag": ""
+  },
+
+  {
+    "nom": "Focusrite Scarlett 4i4 G4",
+    "image": "images/produits/interfaceaudio/scarlett-4i4-g4.webp",
+    "description": "Description courte du produit 2",
+    "categorie": "interfaceaudio",
+    "tag": ""
+  }
+]

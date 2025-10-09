@@ -26,13 +26,19 @@ document.addEventListener("DOMContentLoaded", () => {
             <h3 id="text-icon">Tables de mixage</h3>
           </div>
         </a>
+        <a href="controleurmidi.html" class="icon-products-link">
+          <div class="icon-products">
+            <img src="images/pianomidi.png" class="logo-products" />
+            <h3 id="text-icon">Contrôleur midi</h3>
+          </div>
+        </a>
         <a href="interfaceaudio.html" class="icon-products-link">
           <div class="icon-products">
             <img src="images/audio-interface.png" class="logo-products" />
             <h3 id="text-icon">Interface Audio</h3>
           </div>
         </a>
-        <a href="materieldj.html" class="icon-products-link">
+        <a href="piedetsupport.html" class="icon-products-link">
           <div class="icon-products">
             <img src="images/tripod.png" class="logo-products" />
             <h3 id="text-icon">Pied & Support</h3>

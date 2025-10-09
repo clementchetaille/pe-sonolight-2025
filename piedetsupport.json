@@ -1,0 +1,38 @@
+[
+  {
+    "nom": "Gravity SP 5211 B",
+    "image": "images/produits/piedetsupport/gravity_sp_5211_b.webp",
+    "description": "Description courte du produit 2",
+    "categorie": "piedetsupport",
+    "tag": ""
+  },
+  {
+    "nom": "Gravity SSP WB SET 1",
+    "image": "images/produits/piedetsupport/gravity_ssp_wb_set_1.webp",
+    "description": "Description courte du produit 2",
+    "categorie": "piedetsupport",
+    "tag": ""
+  },
+
+  {
+    "nom": "Gravity MS 4322 B",
+    "image": "images/produits/piedetsupport/gravity_ms_4322_b.webp",
+    "description": "Description courte du produit 2",
+    "categorie": "piedetsupport",
+    "tag": ""
+  },
+  {
+    "nom": "Gravity MS 231 HB",
+    "image": "images/produits/piedetsupport/gravity_ms_231_hb.png",
+    "description": "Description courte du produit 2",
+    "categorie": "piedetsupport",
+    "tag": ""
+  },
+  {
+    "nom": "Gravity MA TH 01B",
+    "image": "images/produits/piedetsupport/gravity_ma_th_01b.png",
+    "description": "Description courte du produit 2",
+    "categorie": "piedetsupport",
+    "tag": ""
+  }
+]
