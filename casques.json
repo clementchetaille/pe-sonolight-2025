@@ -2,42 +2,42 @@
   {
     "nom": "Pioneer HDJ-CX",
     "image": "images/produits/casques/hdjcx.webp",
-    "description": "",
+    "description": "Une qualité sonore précise et immersive pour un monitoring optimal.",
     "categorie": ["accessoiresdj", "casque"],
     "tag": "Best-seller"
   },
   {
     "nom": "Pioneer HDJ-X5",
     "image": "images/produits/casques/hdjx5k.webp",
-    "description": "Description courte du produit 4",
+    "description": "Une Spatialisation Sonore Optimale pour un Mix Précis.",
     "categorie": ["accessoiresdj", "casque"],
     "tag": ""
   },
   {
     "nom": "Beyerdynamic DT 990 PRO",
     "image": "images/produits/casques/beyerdynamic-dt-990-pro.png",
-    "description": "Description courte du produit 4",
+    "description": "Une scène sonore large idéale pour la spatialisation.",
     "categorie": "casque",
     "tag": ""
   },
   {
     "nom": "Beyerdynamic DT 770 PRO",
     "image": "images/produits/casques/dt-770-pro-beyerdynamic.png",
-    "description": "Description courte du produit 4",
+    "description": "Un casque fermé au rendu sonore équilibré.",
     "categorie": "casque",
     "tag": ""
   },
   {
     "nom": "Beyerdynamic DT 900 PRO X",
     "image": "images/produits/casques/beyerdynamic-dt-900-pro-x-.png",
-    "description": "Description courte du produit 4",
+    "description": "Un casque ouvert conçu pour une écoute analytique.",
     "categorie": "casque",
     "tag": ""
   },
   {
     "nom": "Pioneer HDJ-X5BT",
     "image": "images/produits/casques/hdj-x5bt-k.webp",
-    "description": "Description courte du produit 4",
+    "description": "Un son précis et puissant pour un monitoring fiable.",
     "categorie": ["accessoiresdj", "casque"],
     "tag": ""
   }
