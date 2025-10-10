@@ -104,8 +104,8 @@ document.addEventListener("DOMContentLoaded", () => {
   // =====================
   const words = [
     "l'achat de matériel DJ",
-    "les enceintes de monitoring pour home studio",
-    "l'équipement pour home studio",
+    "les enceintes de monitoring",
+    "des shows lumières",
     "le matériel sono professionnel",
   ];
 

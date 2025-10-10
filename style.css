@@ -103,20 +103,6 @@ br {
 /* ======================== ARRIÈRE-PLAN ============================ */
 /* =================================================================== */
 
-/* Gradient animé en arrière-plan
-.background--custom {
-  background: linear-gradient(45deg, #2661ff, #142842, #2584f9);
-  background-size: 400% 400%;
-  animation: gradientShift 10s ease infinite;
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  z-index: -1;
-}
-*/
-
 .background--custom {
   background:
     /* overlay sombre sur les côtés */ linear-gradient(
@@ -408,7 +394,7 @@ input[type="checkbox"]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
   text-align: center;
   z-index: 1;
   box-sizing: border-box;
-  margin-bottom: 8rem;
+  margin-bottom: 2rem;
 } /* Styles pour le texte principal */
 
 .text-container h2 {
@@ -467,6 +453,20 @@ input[type="checkbox"]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 /* =================================================================== */
 /* =================== ANIMATION TEXTE CHANGEANT ==================== */
 /* =================================================================== */
+
+.text-anime {
+  background-color: #003881;
+  height: 3rem;
+  text-align: center;
+  align-content: center;
+  border: 0.2px solid rgba(243, 236, 236, 0.3);
+}
+
+.text-anime h3 {
+  color: white;
+  font-size: 1rem;
+  padding: 0 5rem;
+}
 
 /* Texte qui change avec animation (highlight) */
 .highlight {
@@ -1040,7 +1040,6 @@ input[type="checkbox"]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
   justify-content: center;
   padding: 1rem 1rem 2rem; /* ajoute de l’espace vertical */
   overflow-x: auto; /* scroll horizontal */
-  overflow-y: visible; /* ✅ empêche les coupures verticales */
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
   scroll-behavior: smooth;
@@ -1280,7 +1279,7 @@ body.contact-page .contact-container {
 .cont4 {
   display: flex;
   width: 100%;
-  height: 5rem;
+  height: 8rem;
   justify-content: center;
   align-items: center;
   align-content: center;
@@ -1454,81 +1453,6 @@ body.contact-page .contact-container {
   }
 }
 
-/* Animation jello pour les effets hover */
-@-webkit-keyframes jello-horizontal {
-  0% {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
-  30% {
-    -webkit-transform: scale3d(1.25, 0.75, 1);
-    transform: scale3d(1.25, 0.75, 1);
-  }
-  40% {
-    -webkit-transform: scale3d(0.75, 1.25, 1);
-    transform: scale3d(0.75, 1.25, 1);
-  }
-  50% {
-    -webkit-transform: scale3d(1.15, 0.85, 1);
-    transform: scale3d(1.15, 0.85, 1);
-  }
-  65% {
-    -webkit-transform: scale3d(0.95, 1.05, 1);
-    transform: scale3d(0.95, 1.05, 1);
-  }
-  75% {
-    -webkit-transform: scale3d(1.05, 0.95, 1);
-    transform: scale3d(1.05, 0.95, 1);
-  }
-  100% {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
-}
-
-@keyframes jello-horizontal {
-  0% {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
-  30% {
-    -webkit-transform: scale3d(1.25, 0.75, 1);
-    transform: scale3d(1.25, 0.75, 1);
-  }
-  40% {
-    -webkit-transform: scale3d(0.75, 1.25, 1);
-    transform: scale3d(0.75, 1.25, 1);
-  }
-  50% {
-    -webkit-transform: scale3d(1.15, 0.85, 1);
-    transform: scale3d(1.15, 0.85, 1);
-  }
-  65% {
-    -webkit-transform: scale3d(0.95, 1.05, 1);
-    transform: scale3d(0.95, 1.05, 1);
-  }
-  75% {
-    -webkit-transform: scale3d(1.05, 0.95, 1);
-    transform: scale3d(1.05, 0.95, 1);
-  }
-  100% {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
-}
-
-/* Classe pour l'animation jello */
-.jello-horizontal {
-  -webkit-animation: jello-horizontal 0.9s both;
-  animation: jello-horizontal 0.9s both;
-}
-
-/* Animation au hover sur les icônes sociales */
-.social-bar a:hover i {
-  -webkit-animation: jello-horizontal 0.9s both;
-  animation: jello-horizontal 0.9s both;
-}
-
 /* =================================================================== */
 /* ======================= PAGE PRODUITS ============================= */
 /* =================================================================== */
@@ -1544,7 +1468,12 @@ body.contact-page .contact-container {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  line-height: 0.2rem;
+  line-height: 0.1rem;
+  margin-top: 2rem;
+}
+
+.text-presentation-produits h2 {
+  font-weight: 200;
 }
 
 /* Section de recherche et filtres pour la page nos produits */
@@ -1593,6 +1522,7 @@ body.contact-page .contact-container {
 /* Section produits pour la page nos produits */
 .nosproduits-page .products-section {
   padding-top: 30px; /* espace après filtres */
+  margin-bottom: 10rem;
   box-sizing: border-box;
 }
 
@@ -1983,24 +1913,26 @@ body.nosproduits-page div#filter-buttons button.active:hover {
     padding: 1.5rem 0.5rem;
   }
 
-  .bloc-bottom {
-    padding: 0.5rem;
-    gap: 1rem;
+  .nosproduits-maincontainer {
+    overflow-x: auto;
+    overflow-y: hidden;
+    justify-content: flex-start;
+    margin-top: 0rem;
+  }
+  .product-highlight-banner .bloc-bottom {
+    grid-template-columns: 1fr; /* une seule colonne sur mobile */
+    justify-items: center; /* centre l'image horizontalement */
   }
 
-  .product-highlight-banner h2 {
-    font-size: 1.6rem;
+  .product-highlight-banner .bloc-bottom #img2 {
+    display: none; /* cache la 2Ã¨me image sur mobile */
   }
 
-  .product-highlight-banner a h3 {
-    font-size: 0.9rem;
+  .product-highlight-banner .bloc-bottom #img1 {
+    margin: 0 auto;
+    display: block; /* assure un centrage parfait */
+    max-width: 80%; /* optionnel, pour Ã©viter quâ€™elle soit trop grande */
   }
-
-  .product-highlight-banner img {
-    max-width: 14rem;
-    max-height: 14rem;
-  }
-
   /* Section 2 produits en colonnes sur mobile */
   .section2-produits {
     grid-template-columns: 1fr;
@@ -2127,12 +2059,12 @@ body.nosproduits-page div#filter-buttons button.active:hover {
   font-size: 3rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
 }
 
 .nosservices-top h2 {
   font-size: 1.8rem;
-  font-weight: 600;
+  font-weight: 200;
 }
 
 .nosservices-top h3 {
@@ -2140,6 +2072,12 @@ body.nosproduits-page div#filter-buttons button.active:hover {
   font-weight: 600;
   opacity: 82%;
   padding: 0 4rem;
+}
+
+.footer-services {
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
 }
 .nosservices-container .title-footer-services {
   font-size: 1.8rem;
@@ -2559,7 +2497,26 @@ body.contact-page .contact-container {
 @media (max-width: 768px) {
   .footer-links {
     flex-direction: column;
-    gap: 20px;
+    align-items: center;
+    gap: 25px; /* moins d’espace entre les sections */
+  }
+
+  .footer-links div {
+    min-width: auto;
+    width: 100%;
+    max-width: 300px; /* garde une largeur confortable */
+  }
+
+  .footer-links h2 {
+    font-size: 14px;
+  }
+
+  .footer-links p {
+    font-size: 13px;
+  }
+
+  .footer-logo img {
+    max-width: 120px;
   }
 }
 
@@ -2583,10 +2540,6 @@ body.contact-page .contact-container {
 
   .nosproduits-page {
     padding-top: 60px;
-  }
-
-  .category-container {
-    padding-bottom: 30px;
   }
 }
 
@@ -2656,18 +2609,8 @@ body.contact-page .contact-container {
     gap: 20px;
   }
 
-  /* Catégories - reste en 2 colonnes sur tablette */
-  .category-container {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-    padding: 0 40px;
-  }
-
   /* Footer responsive */
   .footer-container {
-    display: flex; /* passe en flex pour centrer facilement */
-    flex-direction: column; /* les blocs les uns sous les autres */
-    align-items: center; /* centre horizontalement */
     justify-content: center; /* centre verticalement si besoin */
     row-gap: 10px;
     padding: 30px 20px;
@@ -2752,6 +2695,10 @@ body.contact-page .contact-container {
 
   /* Supprime l'élément spacer qui n'est plus nécessaire */
   .header-left-spacer {
+    display: none;
+  }
+
+  .text-anime {
     display: none;
   }
 
@@ -2846,29 +2793,41 @@ body.contact-page .contact-container {
   }
 
   .nosproduits-page #search-input {
-    max-width: 100%;
+    max-width: 50%;
+  }
+
+  .nosproduits-page #filter-buttons {
+    display: grid;
+    grid-template-columns: repeat(
+      2,
+      minmax(120px, 1fr)
+    ); /* deux colonnes fixes */
+    gap: 0.75rem;
+    justify-content: center;
+    max-width: 350px; /* pour garder un bloc compact centré */
+    margin: 0 auto;
+  }
+
+  .nosproduits-page #filter-buttons button {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.2rem;
+    border-radius: 6px;
+    width: 100%; /* pour qu’ils s’alignent parfaitement dans les colonnes */
   }
   .text-presentation-produits {
-    line-height: 0.8rem;
+    line-height: 0.2rem;
+    margin-top: 1rem;
+    padding: 0 2rem;
   }
-
-  .text-presentation-produits h2 {
-    opacity: 70%;
-    line-height: 2rem;
-  }
-
   .text-presentation-produits h1 {
-    line-height: 2.5rem;
+    font-size: 2rem;
+    line-height: 1rem;
     margin-bottom: 1rem;
   }
-  .nosproduits-page #filter-buttons button {
-    padding: 5px 5px;
-    font-size: 0.85rem;
-  }
-  .category-container {
-    grid-template-columns: 1fr 1fr;
-    margin-top: 1.5rem;
-    margin-bottom: 2rem;
+  .text-presentation-produits h2 {
+    font-size: 1rem;
+    opacity: 70%;
+    line-height: 1.4rem;
   }
 
   .category-card {
@@ -2999,15 +2958,6 @@ body.contact-page .contact-container {
 /* ======= ÉCRANS EXTRA LARGES (1440px et plus) =======*/
 
 @media (min-width: 1440px) {
-  .category-container {
-    grid-template-columns: repeat(
-      4,
-      1fr
-    ); /* 3 colonnes sur très grands écrans */
-    max-width: 1400px;
-    margin: 130px auto 0;
-  }
-
   .products-grid {
     grid-template-columns: repeat(4, 1fr); /* 4 colonnes pour les produits */
     max-width: 1400px;

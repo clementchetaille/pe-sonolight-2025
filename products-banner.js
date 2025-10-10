@@ -29,13 +29,13 @@ document.addEventListener("DOMContentLoaded", () => {
         <a href="controleurmidi.html" class="icon-products-link">
           <div class="icon-products">
             <img src="images/pianomidi.png" class="logo-products" />
-            <h3 id="text-icon">Contrôleur midi</h3>
+            <h3 id="text-icon">Contrôleurs midi</h3>
           </div>
         </a>
         <a href="interfaceaudio.html" class="icon-products-link">
           <div class="icon-products">
             <img src="images/audio-interface.png" class="logo-products" />
-            <h3 id="text-icon">Interface Audio</h3>
+            <h3 id="text-icon">Interfaces Audio</h3>
           </div>
         </a>
         <a href="piedetsupport.html" class="icon-products-link">
