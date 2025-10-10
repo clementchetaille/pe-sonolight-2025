@@ -1,34 +1,35 @@
-document.addEventListener("DOMContentLoaded", () => {
-  document.getElementById("footer").innerHTML = `
-<footer class="footer-container">
-  <div class="footer-logo">
-    <img src="images/logo-pe-sono.png" alt="logo-pe-sonolight" />
-  </div>
+document.getElementById("footer").innerHTML = `
+<footer>
 
-  <div class="footer-links">
-    <div class="footer-nosentites">
-      <h2>Nos autres entités</h2>
-      <p><a href="https://www.prestige-evenements.fr/" class="couleur-lien" target="_blank">Prestige Évènements</a></p>
-      <p><a href="https://www.prestige-effects.fr/" class="couleur-lien" target="_blank">Prestige Effects</a></p>
+<div class="footer-container">
+        <section class="footer-col1" id="footer-col">
+        <div>
+          <img src="images/logo-pe-sono.png" alt="Logo" class="logo-img" />
+        </div>
+        </section>
+        <section class="footer-col2" id="footer-col">
+            <h3>Contact</h3>
+            <p>167 Av. Alphonse Lavallée</br>
+            83130 La Garde</br>
+            04 94 20 75 10</br>
+            contact@pesonolight.fr
+            </p>
+        </section>
+        <section class="footer-col3" id="footer-col">
+            <h3>Liens utiles</h3>
+                  <p><a href="apropos.html" class="lien">À propos</a></br>
+            Pass Culture</br>
+            <a href="contact.html" class="lien">Contacts</a>
+            </p>
+        </section>
+        <section class="footer-col4" id="footer-col">
+            <h3>Nos autres entités</h3>
+            <p><a href="https://www.prestige-evenements.fr/" class="lien">Prestige Évènements</a></br>
+            <a href="https://www.prestige-effects.fr/" class="lien">Prestige Effects</a></p>
+        </section>
+        <div id="copyright">© 2025 PE Sono Light. Tous droits réservés.</div>
+        
     </div>
-
-    <div class="footer-contact">
-      <h2>Contact</h2>
-      <p>
-        167 Av. Alphonse Lavallée<br>
-        83130, La Garde<br>
-        04 94 20 75 10<br>
-        <a href="mailto:contact@pesonolight.fr" class="couleur-lien">contact@pesonolight.fr</a>
-      </p>
-    </div>
-
-    <div class="footer-apropos">
-      <h2>Liens utiles</h2>
-      <p><a href="apropos.html" class="couleur-lien">À propos de PE Sono Light</a></p>
-      <p><a href="https://www.prestige-effects.fr/" class="couleur-lien" target="_blank">Pass Culture</a></p>
-      <p><a href="contact.html" class="couleur-lien">Contacts</a></p>
-    </div>
-  </div>
 </footer>
-  `;
-});
+
+`;
