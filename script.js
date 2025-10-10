@@ -142,4 +142,32 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   typeEffect(); // lance l'effet
+
+  // === SCROLL DOUX PREMIUM ===
+  //  const lenis = new Lenis({
+  //  duration: 0.1,
+  //  easing: (t) => t * (2 - t),
+  //  smoothWheel: true,
+  //  smoothTouch: true,
+  //  });
+
+  //  function raf(time) {
+  //  lenis.raf(time);
+  //  requestAnimationFrame(raf);
+  // }
+  // requestAnimationFrame(raf);
+
+  // === BOUTON SCROLL TO TOP ===
+  const btnScroll = document.getElementById("scrollToTop");
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 200) {
+      btnScroll.style.display = "block";
+    } else {
+      btnScroll.style.display = "none";
+    }
+  });
+
+  btnScroll?.addEventListener("click", () => {
+    lenis.scrollTo(0, { duration: 1, easing: (t) => t * (2 - t) });
+  });
 });

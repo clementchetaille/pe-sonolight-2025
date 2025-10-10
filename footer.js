@@ -4,7 +4,7 @@ document.getElementById("footer").innerHTML = `
 <div class="footer-container">
         <section class="footer-col1" id="footer-col">
         <div>
-          <img src="images/logo-pe-sono.png" alt="Logo" class="logo-img" />
+          <img src="images/logo-pe-sono.png" alt="Logo" class="logo-footer" />
         </div>
         </section>
         <section class="footer-col2" id="footer-col">

@@ -180,20 +180,8 @@
     <script src="header.js"></script>
     <script src="footer.js"></script>
     <script src="scrollrevealindex.js"></script>
-    <script>
-      // === Script du bouton Scroll To Top ===
-      const btnScroll = document.getElementById("scrollToTop");
-      window.addEventListener("scroll", () => {
-        if (window.scrollY > 200) {
-          btnScroll.style.display = "block";
-        } else {
-          btnScroll.style.display = "none";
-        }
-      });
-      btnScroll.addEventListener("click", () => {
-        window.scrollTo({ top: 0, behavior: "smooth" });
-      });
-    </script>
+    <script src="https://unpkg.com/@studio-freight/lenis"></script>
+    <script src="script.js"></script>
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
