@@ -24,8 +24,8 @@ document.getElementById("footer").innerHTML = `
         </section>
         <section class="footer-col4" id="footer-col">
             <h3>Nos autres entités</h3>
-            <p><a href="https://www.prestige-evenements.fr/" class="lien">Prestige Évènements</a></br>
-            <a href="https://www.prestige-effects.fr/" class="lien">Prestige Effects</a></p>
+            <p><a href="https://www.prestige-evenements.fr/" class="lien" target="blank">Prestige Évènements</a></br>
+            <a href="https://www.prestige-effects.fr/" class="lien" target="blank">Prestige Effects</a></p>
         </section>
         <div id="copyright">© 2025 PE Sono Light. Tous droits réservés.</div>
         

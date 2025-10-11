@@ -1,6 +1,8 @@
 /* =================================================================== */
 /* ======================== STYLES GÉNÉRAUX ========================== */
 /* =================================================================== */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
 :root {
   /* ========================================================= */
   /* === COULEURS PRINCIPALES (identité visuelle) ============ */
@@ -52,6 +54,7 @@
   --scrollbar-thumb: #555;
   --scrollbar-thumb-hover: #888;
 }
+
 /* Reset et styles de base pour le body */
 body {
   font-family: Arial, sans-serif;
@@ -64,17 +67,22 @@ html {
 }
 
 h1 {
-  font-family: Arial, Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-family: "Inter", Impact, Haettenschweiler, "Arial Narrow Bold",
+    sans-serif;
   color: var(--color-text);
   font-size: 45px;
+  font-weight: 500;
 }
 /* Styles généraux pour les titres */
 h2 {
-  font-family: Arial, Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-family: "Inter", Impact, Haettenschweiler, "Arial Narrow Bold",
+    sans-serif;
   color: var(--color-text);
 }
 
 h3 {
+  font-family: "Inter", Impact, Haettenschweiler, "Arial Narrow Bold",
+    sans-serif;
   color: var(--color-text);
   font-size: small;
   font-family: Arial, Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
@@ -87,6 +95,8 @@ br {
 }
 
 p {
+  font-family: "Inter", Impact, Haettenschweiler, "Arial Narrow Bold",
+    sans-serif;
   color: var(--color-text);
 }
 
@@ -1689,9 +1699,7 @@ body.nosproduits-page div#filter-buttons button.active {
   background: rgba(255, 255, 255, 0.6) !important;
   color: var(--color-primary) !important;
   font-weight: bold !important;
-  transform: scale(1.05) !important;
   box-shadow: 0 4px 12px var(--shadow-light) !important;
-  border: 2px solid var(--color-border) !important;
 }
 
 body.nosproduits-page div#filter-buttons button.active:hover {
@@ -2402,9 +2410,29 @@ body.nosservices-page main {
 .contact-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin-top: 6rem;
+  margin-top: 1rem;
   gap: 2rem;
   padding: 50px;
+}
+
+.contacts-top {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10rem;
+  align-items: center;
+  line-height: 0.1rem;
+}
+
+.contacts-top h3 {
+  font-size: 30px;
+  font-weight: 500;
+  color: var(--color-text-muted);
+}
+
+.contacts-top p {
+  padding: 0 10rem;
+  text-align: center;
+  line-height: 1.5rem;
 }
 
 /* Cartes de contact et map */
@@ -2480,7 +2508,6 @@ body.contact-page {
 body.contact-page .contact-container {
   flex: 1;
 }
-
 /* =================================================================== */
 /* ======================= FOOTER ==================================== */
 /* =================================================================== */
@@ -2694,6 +2721,24 @@ body.contact-page .contact-container {
     gap: 2rem;
     padding: 30px 40px;
     margin-top: 8rem;
+  }
+
+  .contacts-top {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+    align-items: center;
+    line-height: 0.1rem;
+  }
+
+  .contacts-top h3 {
+    font-size: 30px;
+    font-weight: 500;
+  }
+  .contacts-top p {
+    padding: 0 5rem;
+    text-align: center;
+    line-height: 2rem;
   }
 
   .contact-card,
@@ -2988,13 +3033,31 @@ body.contact-page .contact-container {
   .highlight {
     display: inline;
   }
-
   .contact-container {
-    grid-template-columns: 1fr; /* une seule colonne */
+    grid-template-columns: 1fr;
     padding: 20px 15px;
-    margin-top: 20px;
+    gap: 1rem;
+    margin-top: 0.5rem;
   }
 
+  .contacts-top {
+    margin-top: 2rem;
+  }
+  .contacts-top h1 {
+    font-size: 20px;
+  }
+  .contacts-top h3 {
+    font-size: 15px;
+    text-align: center;
+    padding: 0 1rem;
+  }
+
+  .contacts-top p {
+    padding: 0 1rem;
+    font-size: 14px;
+    line-height: 1.6rem;
+    font-weight: 600;
+  }
   .contact-card h1 {
     font-size: 2rem;
   }
